@@ -190,7 +190,7 @@ def render(analysis):
                 ),
                 "0/1",
             )
-            cells.append(f"<td>{display(read_fraction(amount) / 100, 0)}</td>")
+            cells.append(f"<td>{display(read_fraction(amount) / 100, 2)}</td>")
         matrix.append(f"<tr><th>{esc(debtor)}</th>" + "".join(cells) + "</tr>")
     columns = "".join(f"<th>{esc(name)}</th>" for name in analysis["node_ids"] + ["OUTSIDE"])
     return (
