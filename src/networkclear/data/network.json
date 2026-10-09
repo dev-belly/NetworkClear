@@ -1,0 +1,88 @@
+{
+  "currency": "USD",
+  "edges": [
+    {
+      "amount_cents": 800000,
+      "creditor": "B",
+      "debtor": "A"
+    },
+    {
+      "amount_cents": 640000,
+      "creditor": "C",
+      "debtor": "B"
+    },
+    {
+      "amount_cents": 512000,
+      "creditor": "D",
+      "debtor": "C"
+    },
+    {
+      "amount_cents": 300000,
+      "creditor": "F",
+      "debtor": "E"
+    },
+    {
+      "amount_cents": 220000,
+      "creditor": "E",
+      "debtor": "F"
+    },
+    {
+      "amount_cents": 150000,
+      "creditor": "H",
+      "debtor": "G"
+    },
+    {
+      "amount_cents": 50000,
+      "creditor": "E",
+      "debtor": "G"
+    },
+    {
+      "amount_cents": 50000,
+      "creditor": "F",
+      "debtor": "H"
+    }
+  ],
+  "nodes": [
+    {
+      "cash_cents": 1000000,
+      "id": "A",
+      "outside_debt_cents": 200000
+    },
+    {
+      "cash_cents": 50000,
+      "id": "B",
+      "outside_debt_cents": 160000
+    },
+    {
+      "cash_cents": 50000,
+      "id": "C",
+      "outside_debt_cents": 128000
+    },
+    {
+      "cash_cents": 50000,
+      "id": "D",
+      "outside_debt_cents": 500000
+    },
+    {
+      "cash_cents": 300000,
+      "id": "E",
+      "outside_debt_cents": 100000
+    },
+    {
+      "cash_cents": 150000,
+      "id": "F",
+      "outside_debt_cents": 80000
+    },
+    {
+      "cash_cents": 250000,
+      "id": "G",
+      "outside_debt_cents": 50000
+    },
+    {
+      "cash_cents": 100000,
+      "id": "H",
+      "outside_debt_cents": 100000
+    }
+  ],
+  "schema_version": 1
+}

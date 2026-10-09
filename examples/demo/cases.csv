@@ -1,0 +1,16 @@
+scenario,default_ids,direct_default_ids,cascade_default_ids,default_count,cascade_count,gross_unpaid_cents,outside_shortfall_cents,external_asset_shock_cents,injection_cents,algorithm_rounds,conservation_residual_cents,fixed_point_residual_cents
+anchor-000-pct,,,,0,0,0/1,0/1,0/1,0,0,0/1,0/1
+anchor-010-pct,A;B,A,B,2,1,130000/1,26000/1,100000/1,0,2,0/1,0/1
+anchor-020-pct,A;B;C,A,B;C,3,2,348000/1,69600/1,200000/1,0,3,0/1,0/1
+anchor-030-pct,A;B;C;D,A,B;C;D,4,3,611600/1,138000/1,300000/1,0,4,0/1,0/1
+anchor-040-pct,A;B;C;D,A,B;C;D,4,3,906800/1,238000/1,400000/1,0,4,0/1,0/1
+anchor-050-pct,A;B;C;D,A,B;C;D,4,3,1202000/1,338000/1,500000/1,0,4,0/1,0/1
+anchor-060-pct,A;B;C;D,A,B;C;D,4,3,1497200/1,438000/1,600000/1,0,4,0/1,0/1
+anchor-070-pct,A;B;C;D,A,B;C;D,4,3,1792400/1,538000/1,700000/1,0,4,0/1,0/1
+anchor-080-pct,A;B;C;D,A,B;C;D,4,3,2087600/1,638000/1,800000/1,0,4,0/1,0/1
+anchor-090-pct,A;B;C;D,A,B;C;D,4,3,2382800/1,738000/1,900000/1,0,4,0/1,0/1
+anchor-100-pct,A;B;C;D,A,B;C;D,4,3,2678000/1,838000/1,1000000/1,0,4,0/1,0/1
+broad-050-pct,A;B;C;D;E;G;H,A;G,B;C;D;E;H,7,5,1488000/1,1367750/3,975000/1,0,4,0/1,0/1
+cycle-090-pct,E;F,E,F,2,1,3740000/27,35000/1,405000/1,0,2,0/1,0/1
+anchor-050-rescue-anchor,A;B;C;D,A,B;C;D,4,3,611600/1,138000/1,500000/1,200000,4,0/1,0/1
+anchor-050-rescue-equal,A;B;C;D,A,B;C;D,4,3,997200/1,238000/1,500000/1,200000,4,0/1,0/1

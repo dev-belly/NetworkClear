@@ -1,0 +1,126 @@
+[
+  {
+    "id": "anchor-000-pct",
+    "injections_cents": {},
+    "reductions_bps": {
+      "A": 0
+    }
+  },
+  {
+    "id": "anchor-010-pct",
+    "injections_cents": {},
+    "reductions_bps": {
+      "A": 1000
+    }
+  },
+  {
+    "id": "anchor-020-pct",
+    "injections_cents": {},
+    "reductions_bps": {
+      "A": 2000
+    }
+  },
+  {
+    "id": "anchor-030-pct",
+    "injections_cents": {},
+    "reductions_bps": {
+      "A": 3000
+    }
+  },
+  {
+    "id": "anchor-040-pct",
+    "injections_cents": {},
+    "reductions_bps": {
+      "A": 4000
+    }
+  },
+  {
+    "id": "anchor-050-pct",
+    "injections_cents": {},
+    "reductions_bps": {
+      "A": 5000
+    }
+  },
+  {
+    "id": "anchor-060-pct",
+    "injections_cents": {},
+    "reductions_bps": {
+      "A": 6000
+    }
+  },
+  {
+    "id": "anchor-070-pct",
+    "injections_cents": {},
+    "reductions_bps": {
+      "A": 7000
+    }
+  },
+  {
+    "id": "anchor-080-pct",
+    "injections_cents": {},
+    "reductions_bps": {
+      "A": 8000
+    }
+  },
+  {
+    "id": "anchor-090-pct",
+    "injections_cents": {},
+    "reductions_bps": {
+      "A": 9000
+    }
+  },
+  {
+    "id": "anchor-100-pct",
+    "injections_cents": {},
+    "reductions_bps": {
+      "A": 10000
+    }
+  },
+  {
+    "id": "broad-050-pct",
+    "injections_cents": {},
+    "reductions_bps": {
+      "A": 5000,
+      "B": 5000,
+      "C": 5000,
+      "D": 5000,
+      "E": 5000,
+      "F": 5000,
+      "G": 5000,
+      "H": 5000
+    }
+  },
+  {
+    "id": "cycle-090-pct",
+    "injections_cents": {},
+    "reductions_bps": {
+      "E": 9000,
+      "F": 9000
+    }
+  },
+  {
+    "id": "anchor-050-rescue-anchor",
+    "injections_cents": {
+      "A": 200000
+    },
+    "reductions_bps": {
+      "A": 5000
+    }
+  },
+  {
+    "id": "anchor-050-rescue-equal",
+    "injections_cents": {
+      "A": 25000,
+      "B": 25000,
+      "C": 25000,
+      "D": 25000,
+      "E": 25000,
+      "F": 25000,
+      "G": 25000,
+      "H": 25000
+    },
+    "reductions_bps": {
+      "A": 5000
+    }
+  }
+]

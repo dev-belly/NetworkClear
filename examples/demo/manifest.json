@@ -1,0 +1,13 @@
+{
+  "files": {
+    "analysis.json": "4d2abb8902136d250bbc3219fe4c5e3df0381227591d43af1e69014f4bcfadd8",
+    "cases.csv": "2ca0375df02d42d0d15e9b1a67302e1994c49962e11432ee52d180b7beff51cd",
+    "flows.csv": "429fd4b6b6c5bb60462dd57c3bd966716e3784fecbc042cb295b600c3eb3f7a6",
+    "index.html": "b073d848ca60aea3159663a90635d5fe5011651d6ae5fd749960725cb4286fc4",
+    "network.json": "a0c04dfaa5d865c824894e3f528b62040c7a8e6d12f8aba58aa42ea10614fe27",
+    "payments.csv": "15e0e39695b4728d5a5912093ded0020d0d4f888947c28a043eec1b3e91e90e9",
+    "rounds.csv": "d4962b9c524c9c20165b5a986a1ba5b340a0cc6efdcd80ac04536fb09eb22d64",
+    "scenarios.json": "7643ae9eb5b1284fb52ba2be3a882207111fc58315a88c9f4e7364b8d9ce154b"
+  },
+  "schema_version": 1
+}

@@ -1,0 +1,4707 @@
+{
+  "amount_contract": "exact rational cents",
+  "cases": [
+    {
+      "algorithm_rounds": 0,
+      "cascade_count": 0,
+      "cascade_default_ids": [],
+      "conservation_residual_cents": "0/1",
+      "default_count": 0,
+      "default_ids": [],
+      "direct_default_ids": [],
+      "external_asset_shock_cents": "0/1",
+      "fixed_point_residual_cents": "0/1",
+      "gross_unpaid_cents": "0/1",
+      "injection_cents": 0,
+      "outside_shortfall_cents": "0/1",
+      "scenario": "anchor-000-pct"
+    },
+    {
+      "algorithm_rounds": 2,
+      "cascade_count": 1,
+      "cascade_default_ids": [
+        "B"
+      ],
+      "conservation_residual_cents": "0/1",
+      "default_count": 2,
+      "default_ids": [
+        "A",
+        "B"
+      ],
+      "direct_default_ids": [
+        "A"
+      ],
+      "external_asset_shock_cents": "100000/1",
+      "fixed_point_residual_cents": "0/1",
+      "gross_unpaid_cents": "130000/1",
+      "injection_cents": 0,
+      "outside_shortfall_cents": "26000/1",
+      "scenario": "anchor-010-pct"
+    },
+    {
+      "algorithm_rounds": 3,
+      "cascade_count": 2,
+      "cascade_default_ids": [
+        "B",
+        "C"
+      ],
+      "conservation_residual_cents": "0/1",
+      "default_count": 3,
+      "default_ids": [
+        "A",
+        "B",
+        "C"
+      ],
+      "direct_default_ids": [
+        "A"
+      ],
+      "external_asset_shock_cents": "200000/1",
+      "fixed_point_residual_cents": "0/1",
+      "gross_unpaid_cents": "348000/1",
+      "injection_cents": 0,
+      "outside_shortfall_cents": "69600/1",
+      "scenario": "anchor-020-pct"
+    },
+    {
+      "algorithm_rounds": 4,
+      "cascade_count": 3,
+      "cascade_default_ids": [
+        "B",
+        "C",
+        "D"
+      ],
+      "conservation_residual_cents": "0/1",
+      "default_count": 4,
+      "default_ids": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "direct_default_ids": [
+        "A"
+      ],
+      "external_asset_shock_cents": "300000/1",
+      "fixed_point_residual_cents": "0/1",
+      "gross_unpaid_cents": "611600/1",
+      "injection_cents": 0,
+      "outside_shortfall_cents": "138000/1",
+      "scenario": "anchor-030-pct"
+    },
+    {
+      "algorithm_rounds": 4,
+      "cascade_count": 3,
+      "cascade_default_ids": [
+        "B",
+        "C",
+        "D"
+      ],
+      "conservation_residual_cents": "0/1",
+      "default_count": 4,
+      "default_ids": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "direct_default_ids": [
+        "A"
+      ],
+      "external_asset_shock_cents": "400000/1",
+      "fixed_point_residual_cents": "0/1",
+      "gross_unpaid_cents": "906800/1",
+      "injection_cents": 0,
+      "outside_shortfall_cents": "238000/1",
+      "scenario": "anchor-040-pct"
+    },
+    {
+      "algorithm_rounds": 4,
+      "cascade_count": 3,
+      "cascade_default_ids": [
+        "B",
+        "C",
+        "D"
+      ],
+      "conservation_residual_cents": "0/1",
+      "default_count": 4,
+      "default_ids": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "direct_default_ids": [
+        "A"
+      ],
+      "external_asset_shock_cents": "500000/1",
+      "fixed_point_residual_cents": "0/1",
+      "gross_unpaid_cents": "1202000/1",
+      "injection_cents": 0,
+      "outside_shortfall_cents": "338000/1",
+      "scenario": "anchor-050-pct"
+    },
+    {
+      "algorithm_rounds": 4,
+      "cascade_count": 3,
+      "cascade_default_ids": [
+        "B",
+        "C",
+        "D"
+      ],
+      "conservation_residual_cents": "0/1",
+      "default_count": 4,
+      "default_ids": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "direct_default_ids": [
+        "A"
+      ],
+      "external_asset_shock_cents": "600000/1",
+      "fixed_point_residual_cents": "0/1",
+      "gross_unpaid_cents": "1497200/1",
+      "injection_cents": 0,
+      "outside_shortfall_cents": "438000/1",
+      "scenario": "anchor-060-pct"
+    },
+    {
+      "algorithm_rounds": 4,
+      "cascade_count": 3,
+      "cascade_default_ids": [
+        "B",
+        "C",
+        "D"
+      ],
+      "conservation_residual_cents": "0/1",
+      "default_count": 4,
+      "default_ids": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "direct_default_ids": [
+        "A"
+      ],
+      "external_asset_shock_cents": "700000/1",
+      "fixed_point_residual_cents": "0/1",
+      "gross_unpaid_cents": "1792400/1",
+      "injection_cents": 0,
+      "outside_shortfall_cents": "538000/1",
+      "scenario": "anchor-070-pct"
+    },
+    {
+      "algorithm_rounds": 4,
+      "cascade_count": 3,
+      "cascade_default_ids": [
+        "B",
+        "C",
+        "D"
+      ],
+      "conservation_residual_cents": "0/1",
+      "default_count": 4,
+      "default_ids": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "direct_default_ids": [
+        "A"
+      ],
+      "external_asset_shock_cents": "800000/1",
+      "fixed_point_residual_cents": "0/1",
+      "gross_unpaid_cents": "2087600/1",
+      "injection_cents": 0,
+      "outside_shortfall_cents": "638000/1",
+      "scenario": "anchor-080-pct"
+    },
+    {
+      "algorithm_rounds": 4,
+      "cascade_count": 3,
+      "cascade_default_ids": [
+        "B",
+        "C",
+        "D"
+      ],
+      "conservation_residual_cents": "0/1",
+      "default_count": 4,
+      "default_ids": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "direct_default_ids": [
+        "A"
+      ],
+      "external_asset_shock_cents": "900000/1",
+      "fixed_point_residual_cents": "0/1",
+      "gross_unpaid_cents": "2382800/1",
+      "injection_cents": 0,
+      "outside_shortfall_cents": "738000/1",
+      "scenario": "anchor-090-pct"
+    },
+    {
+      "algorithm_rounds": 4,
+      "cascade_count": 3,
+      "cascade_default_ids": [
+        "B",
+        "C",
+        "D"
+      ],
+      "conservation_residual_cents": "0/1",
+      "default_count": 4,
+      "default_ids": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "direct_default_ids": [
+        "A"
+      ],
+      "external_asset_shock_cents": "1000000/1",
+      "fixed_point_residual_cents": "0/1",
+      "gross_unpaid_cents": "2678000/1",
+      "injection_cents": 0,
+      "outside_shortfall_cents": "838000/1",
+      "scenario": "anchor-100-pct"
+    },
+    {
+      "algorithm_rounds": 4,
+      "cascade_count": 5,
+      "cascade_default_ids": [
+        "B",
+        "C",
+        "D",
+        "E",
+        "H"
+      ],
+      "conservation_residual_cents": "0/1",
+      "default_count": 7,
+      "default_ids": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "G",
+        "H"
+      ],
+      "direct_default_ids": [
+        "A",
+        "G"
+      ],
+      "external_asset_shock_cents": "975000/1",
+      "fixed_point_residual_cents": "0/1",
+      "gross_unpaid_cents": "1488000/1",
+      "injection_cents": 0,
+      "outside_shortfall_cents": "1367750/3",
+      "scenario": "broad-050-pct"
+    },
+    {
+      "algorithm_rounds": 2,
+      "cascade_count": 1,
+      "cascade_default_ids": [
+        "F"
+      ],
+      "conservation_residual_cents": "0/1",
+      "default_count": 2,
+      "default_ids": [
+        "E",
+        "F"
+      ],
+      "direct_default_ids": [
+        "E"
+      ],
+      "external_asset_shock_cents": "405000/1",
+      "fixed_point_residual_cents": "0/1",
+      "gross_unpaid_cents": "3740000/27",
+      "injection_cents": 0,
+      "outside_shortfall_cents": "35000/1",
+      "scenario": "cycle-090-pct"
+    },
+    {
+      "algorithm_rounds": 4,
+      "cascade_count": 3,
+      "cascade_default_ids": [
+        "B",
+        "C",
+        "D"
+      ],
+      "conservation_residual_cents": "0/1",
+      "default_count": 4,
+      "default_ids": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "direct_default_ids": [
+        "A"
+      ],
+      "external_asset_shock_cents": "500000/1",
+      "fixed_point_residual_cents": "0/1",
+      "gross_unpaid_cents": "611600/1",
+      "injection_cents": 200000,
+      "outside_shortfall_cents": "138000/1",
+      "scenario": "anchor-050-rescue-anchor"
+    },
+    {
+      "algorithm_rounds": 4,
+      "cascade_count": 3,
+      "cascade_default_ids": [
+        "B",
+        "C",
+        "D"
+      ],
+      "conservation_residual_cents": "0/1",
+      "default_count": 4,
+      "default_ids": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "direct_default_ids": [
+        "A"
+      ],
+      "external_asset_shock_cents": "500000/1",
+      "fixed_point_residual_cents": "0/1",
+      "gross_unpaid_cents": "997200/1",
+      "injection_cents": 200000,
+      "outside_shortfall_cents": "238000/1",
+      "scenario": "anchor-050-rescue-equal"
+    }
+  ],
+  "currency": "USD",
+  "data_kind": "synthetic network; not observations of real institutions",
+  "flows": [
+    {
+      "creditor": "B",
+      "debtor": "A",
+      "nominal_cents": "800000/1",
+      "paid_cents": "800000/1",
+      "scenario": "anchor-000-pct"
+    },
+    {
+      "creditor": "OUTSIDE",
+      "debtor": "A",
+      "nominal_cents": "200000/1",
+      "paid_cents": "200000/1",
+      "scenario": "anchor-000-pct"
+    },
+    {
+      "creditor": "C",
+      "debtor": "B",
+      "nominal_cents": "640000/1",
+      "paid_cents": "640000/1",
+      "scenario": "anchor-000-pct"
+    },
+    {
+      "creditor": "OUTSIDE",
+      "debtor": "B",
+      "nominal_cents": "160000/1",
+      "paid_cents": "160000/1",
+      "scenario": "anchor-000-pct"
+    },
+    {
+      "creditor": "D",
+      "debtor": "C",
+      "nominal_cents": "512000/1",
+      "paid_cents": "512000/1",
+      "scenario": "anchor-000-pct"
+    },
+    {
+      "creditor": "OUTSIDE",
+      "debtor": "C",
+      "nominal_cents": "128000/1",
+      "paid_cents": "128000/1",
+      "scenario": "anchor-000-pct"
+    },
+    {
+      "creditor": "OUTSIDE",
+      "debtor": "D",
+      "nominal_cents": "500000/1",
+      "paid_cents": "500000/1",
+      "scenario": "anchor-000-pct"
+    },
+    {
+      "creditor": "F",
+      "debtor": "E",
+      "nominal_cents": "300000/1",
+      "paid_cents": "300000/1",
+      "scenario": "anchor-000-pct"
+    },
+    {
+      "creditor": "OUTSIDE",
+      "debtor": "E",
+      "nominal_cents": "100000/1",
+      "paid_cents": "100000/1",
+      "scenario": "anchor-000-pct"
+    },
+    {
+      "creditor": "E",
+      "debtor": "F",
+      "nominal_cents": "220000/1",
+      "paid_cents": "220000/1",
+      "scenario": "anchor-000-pct"
+    },
+    {
+      "creditor": "OUTSIDE",
+      "debtor": "F",
+      "nominal_cents": "80000/1",
+      "paid_cents": "80000/1",
+      "scenario": "anchor-000-pct"
+    },
+    {
+      "creditor": "E",
+      "debtor": "G",
+      "nominal_cents": "50000/1",
+      "paid_cents": "50000/1",
+      "scenario": "anchor-000-pct"
+    },
+    {
+      "creditor": "H",
+      "debtor": "G",
+      "nominal_cents": "150000/1",
+      "paid_cents": "150000/1",
+      "scenario": "anchor-000-pct"
+    },
+    {
+      "creditor": "OUTSIDE",
+      "debtor": "G",
+      "nominal_cents": "50000/1",
+      "paid_cents": "50000/1",
+      "scenario": "anchor-000-pct"
+    },
+    {
+      "creditor": "F",
+      "debtor": "H",
+      "nominal_cents": "50000/1",
+      "paid_cents": "50000/1",
+      "scenario": "anchor-000-pct"
+    },
+    {
+      "creditor": "OUTSIDE",
+      "debtor": "H",
+      "nominal_cents": "100000/1",
+      "paid_cents": "100000/1",
+      "scenario": "anchor-000-pct"
+    },
+    {
+      "creditor": "B",
+      "debtor": "A",
+      "nominal_cents": "800000/1",
+      "paid_cents": "720000/1",
+      "scenario": "anchor-010-pct"
+    },
+    {
+      "creditor": "OUTSIDE",
+      "debtor": "A",
+      "nominal_cents": "200000/1",
+      "paid_cents": "180000/1",
+      "scenario": "anchor-010-pct"
+    },
+    {
+      "creditor": "C",
+      "debtor": "B",
+      "nominal_cents": "640000/1",
+      "paid_cents": "616000/1",
+      "scenario": "anchor-010-pct"
+    },
+    {
+      "creditor": "OUTSIDE",
+      "debtor": "B",
+      "nominal_cents": "160000/1",
+      "paid_cents": "154000/1",
+      "scenario": "anchor-010-pct"
+    },
+    {
+      "creditor": "D",
+      "debtor": "C",
+      "nominal_cents": "512000/1",
+      "paid_cents": "512000/1",
+      "scenario": "anchor-010-pct"
+    },
+    {
+      "creditor": "OUTSIDE",
+      "debtor": "C",
+      "nominal_cents": "128000/1",
+      "paid_cents": "128000/1",
+      "scenario": "anchor-010-pct"
+    },
+    {
+      "creditor": "OUTSIDE",
+      "debtor": "D",
+      "nominal_cents": "500000/1",
+      "paid_cents": "500000/1",
+      "scenario": "anchor-010-pct"
+    },
+    {
+      "creditor": "F",
+      "debtor": "E",
+      "nominal_cents": "300000/1",
+      "paid_cents": "300000/1",
+      "scenario": "anchor-010-pct"
+    },
+    {
+      "creditor": "OUTSIDE",
+      "debtor": "E",
+      "nominal_cents": "100000/1",
+      "paid_cents": "100000/1",
+      "scenario": "anchor-010-pct"
+    },
+    {
+      "creditor": "E",
+      "debtor": "F",
+      "nominal_cents": "220000/1",
+      "paid_cents": "220000/1",
+      "scenario": "anchor-010-pct"
+    },
+    {
+      "creditor": "OUTSIDE",
+      "debtor": "F",
+      "nominal_cents": "80000/1",
+      "paid_cents": "80000/1",
+      "scenario": "anchor-010-pct"
+    },
+    {
+      "creditor": "E",
+      "debtor": "G",
+      "nominal_cents": "50000/1",
+      "paid_cents": "50000/1",
+      "scenario": "anchor-010-pct"
+    },
+    {
+      "creditor": "H",
+      "debtor": "G",
+      "nominal_cents": "150000/1",
+      "paid_cents": "150000/1",
+      "scenario": "anchor-010-pct"
+    },
+    {
+      "creditor": "OUTSIDE",
+      "debtor": "G",
+      "nominal_cents": "50000/1",
+      "paid_cents": "50000/1",
+      "scenario": "anchor-010-pct"
+    },
+    {
+      "creditor": "F",
+      "debtor": "H",
+      "nominal_cents": "50000/1",
+      "paid_cents": "50000/1",
+      "scenario": "anchor-010-pct"
+    },
+    {
+      "creditor": "OUTSIDE",
+      "debtor": "H",
+      "nominal_cents": "100000/1",
+      "paid_cents": "100000/1",
+      "scenario": "anchor-010-pct"
+    },
+    {
+      "creditor": "B",
+      "debtor": "A",
+      "nominal_cents": "800000/1",
+      "paid_cents": "640000/1",
+      "scenario": "anchor-020-pct"
+    },
+    {
+      "creditor": "OUTSIDE",
+      "debtor": "A",
+      "nominal_cents": "200000/1",
+      "paid_cents": "160000/1",
+      "scenario": "anchor-020-pct"
+    },
+    {
+      "creditor": "C",
+      "debtor": "B",
+      "nominal_cents": "640000/1",
+      "paid_cents": "552000/1",
+      "scenario": "anchor-020-pct"
+    },
+    {
+      "creditor": "OUTSIDE",
+      "debtor": "B",
+      "nominal_cents": "160000/1",
+      "paid_cents": "138000/1",
+      "scenario": "anchor-020-pct"
+    },
+    {
+      "creditor": "D",
+      "debtor": "C",
+      "nominal_cents": "512000/1",
+      "paid_cents": "481600/1",
+      "scenario": "anchor-020-pct"
+    },
+    {
+      "creditor": "OUTSIDE",
+      "debtor": "C",
+      "nominal_cents": "128000/1",
+      "paid_cents": "120400/1",
+      "scenario": "anchor-020-pct"
+    },
+    {
+      "creditor": "OUTSIDE",
+      "debtor": "D",
+      "nominal_cents": "500000/1",
+      "paid_cents": "500000/1",
+      "scenario": "anchor-020-pct"
+    },
+    {
+      "creditor": "F",
+      "debtor": "E",
+      "nominal_cents": "300000/1",
+      "paid_cents": "300000/1",
+      "scenario": "anchor-020-pct"
+    },
+    {
+      "creditor": "OUTSIDE",
+      "debtor": "E",
+      "nominal_cents": "100000/1",
+      "paid_cents": "100000/1",
+      "scenario": "anchor-020-pct"
+    },
+    {
+      "creditor": "E",
+      "debtor": "F",
+      "nominal_cents": "220000/1",
+      "paid_cents": "220000/1",
+      "scenario": "anchor-020-pct"
+    },
+    {
+      "creditor": "OUTSIDE",
+      "debtor": "F",
+      "nominal_cents": "80000/1",
+      "paid_cents": "80000/1",
+      "scenario": "anchor-020-pct"
+    },
+    {
+      "creditor": "E",
+      "debtor": "G",
+      "nominal_cents": "50000/1",
+      "paid_cents": "50000/1",
+      "scenario": "anchor-020-pct"
+    },
+    {
+      "creditor": "H",
+      "debtor": "G",
+      "nominal_cents": "150000/1",
+      "paid_cents": "150000/1",
+      "scenario": "anchor-020-pct"
+    },
+    {
+      "creditor": "OUTSIDE",
+      "debtor": "G",
+      "nominal_cents": "50000/1",
+      "paid_cents": "50000/1",
+      "scenario": "anchor-020-pct"
+    },
+    {
+      "creditor": "F",
+      "debtor": "H",
+      "nominal_cents": "50000/1",
+      "paid_cents": "50000/1",
+      "scenario": "anchor-020-pct"
+    },
+    {
+      "creditor": "OUTSIDE",
+      "debtor": "H",
+      "nominal_cents": "100000/1",
+      "paid_cents": "100000/1",
+      "scenario": "anchor-020-pct"
+    },
+    {
+      "creditor": "B",
+      "debtor": "A",
+      "nominal_cents": "800000/1",
+      "paid_cents": "560000/1",
+      "scenario": "anchor-030-pct"
+    },
+    {
+      "creditor": "OUTSIDE",
+      "debtor": "A",
+      "nominal_cents": "200000/1",
+      "paid_cents": "140000/1",
+      "scenario": "anchor-030-pct"
+    },
+    {
+      "creditor": "C",
+      "debtor": "B",
+      "nominal_cents": "640000/1",
+      "paid_cents": "488000/1",
+      "scenario": "anchor-030-pct"
+    },
+    {
+      "creditor": "OUTSIDE",
+      "debtor": "B",
+      "nominal_cents": "160000/1",
+      "paid_cents": "122000/1",
+      "scenario": "anchor-030-pct"
+    },
+    {
+      "creditor": "D",
+      "debtor": "C",
+      "nominal_cents": "512000/1",
+      "paid_cents": "430400/1",
+      "scenario": "anchor-030-pct"
+    },
+    {
+      "creditor": "OUTSIDE",
+      "debtor": "C",
+      "nominal_cents": "128000/1",
+      "paid_cents": "107600/1",
+      "scenario": "anchor-030-pct"
+    },
+    {
+      "creditor": "OUTSIDE",
+      "debtor": "D",
+      "nominal_cents": "500000/1",
+      "paid_cents": "480400/1",
+      "scenario": "anchor-030-pct"
+    },
+    {
+      "creditor": "F",
+      "debtor": "E",
+      "nominal_cents": "300000/1",
+      "paid_cents": "300000/1",
+      "scenario": "anchor-030-pct"
+    },
+    {
+      "creditor": "OUTSIDE",
+      "debtor": "E",
+      "nominal_cents": "100000/1",
+      "paid_cents": "100000/1",
+      "scenario": "anchor-030-pct"
+    },
+    {
+      "creditor": "E",
+      "debtor": "F",
+      "nominal_cents": "220000/1",
+      "paid_cents": "220000/1",
+      "scenario": "anchor-030-pct"
+    },
+    {
+      "creditor": "OUTSIDE",
+      "debtor": "F",
+      "nominal_cents": "80000/1",
+      "paid_cents": "80000/1",
+      "scenario": "anchor-030-pct"
+    },
+    {
+      "creditor": "E",
+      "debtor": "G",
+      "nominal_cents": "50000/1",
+      "paid_cents": "50000/1",
+      "scenario": "anchor-030-pct"
+    },
+    {
+      "creditor": "H",
+      "debtor": "G",
+      "nominal_cents": "150000/1",
+      "paid_cents": "150000/1",
+      "scenario": "anchor-030-pct"
+    },
+    {
+      "creditor": "OUTSIDE",
+      "debtor": "G",
+      "nominal_cents": "50000/1",
+      "paid_cents": "50000/1",
+      "scenario": "anchor-030-pct"
+    },
+    {
+      "creditor": "F",
+      "debtor": "H",
+      "nominal_cents": "50000/1",
+      "paid_cents": "50000/1",
+      "scenario": "anchor-030-pct"
+    },
+    {
+      "creditor": "OUTSIDE",
+      "debtor": "H",
+      "nominal_cents": "100000/1",
+      "paid_cents": "100000/1",
+      "scenario": "anchor-030-pct"
+    },
+    {
+      "creditor": "B",
+      "debtor": "A",
+      "nominal_cents": "800000/1",
+      "paid_cents": "480000/1",
+      "scenario": "anchor-040-pct"
+    },
+    {
+      "creditor": "OUTSIDE",
+      "debtor": "A",
+      "nominal_cents": "200000/1",
+      "paid_cents": "120000/1",
+      "scenario": "anchor-040-pct"
+    },
+    {
+      "creditor": "C",
+      "debtor": "B",
+      "nominal_cents": "640000/1",
+      "paid_cents": "424000/1",
+      "scenario": "anchor-040-pct"
+    },
+    {
+      "creditor": "OUTSIDE",
+      "debtor": "B",
+      "nominal_cents": "160000/1",
+      "paid_cents": "106000/1",
+      "scenario": "anchor-040-pct"
+    },
+    {
+      "creditor": "D",
+      "debtor": "C",
+      "nominal_cents": "512000/1",
+      "paid_cents": "379200/1",
+      "scenario": "anchor-040-pct"
+    },
+    {
+      "creditor": "OUTSIDE",
+      "debtor": "C",
+      "nominal_cents": "128000/1",
+      "paid_cents": "94800/1",
+      "scenario": "anchor-040-pct"
+    },
+    {
+      "creditor": "OUTSIDE",
+      "debtor": "D",
+      "nominal_cents": "500000/1",
+      "paid_cents": "429200/1",
+      "scenario": "anchor-040-pct"
+    },
+    {
+      "creditor": "F",
+      "debtor": "E",
+      "nominal_cents": "300000/1",
+      "paid_cents": "300000/1",
+      "scenario": "anchor-040-pct"
+    },
+    {
+      "creditor": "OUTSIDE",
+      "debtor": "E",
+      "nominal_cents": "100000/1",
+      "paid_cents": "100000/1",
+      "scenario": "anchor-040-pct"
+    },
+    {
+      "creditor": "E",
+      "debtor": "F",
+      "nominal_cents": "220000/1",
+      "paid_cents": "220000/1",
+      "scenario": "anchor-040-pct"
+    },
+    {
+      "creditor": "OUTSIDE",
+      "debtor": "F",
+      "nominal_cents": "80000/1",
+      "paid_cents": "80000/1",
+      "scenario": "anchor-040-pct"
+    },
+    {
+      "creditor": "E",
+      "debtor": "G",
+      "nominal_cents": "50000/1",
+      "paid_cents": "50000/1",
+      "scenario": "anchor-040-pct"
+    },
+    {
+      "creditor": "H",
+      "debtor": "G",
+      "nominal_cents": "150000/1",
+      "paid_cents": "150000/1",
+      "scenario": "anchor-040-pct"
+    },
+    {
+      "creditor": "OUTSIDE",
+      "debtor": "G",
+      "nominal_cents": "50000/1",
+      "paid_cents": "50000/1",
+      "scenario": "anchor-040-pct"
+    },
+    {
+      "creditor": "F",
+      "debtor": "H",
+      "nominal_cents": "50000/1",
+      "paid_cents": "50000/1",
+      "scenario": "anchor-040-pct"
+    },
+    {
+      "creditor": "OUTSIDE",
+      "debtor": "H",
+      "nominal_cents": "100000/1",
+      "paid_cents": "100000/1",
+      "scenario": "anchor-040-pct"
+    },
+    {
+      "creditor": "B",
+      "debtor": "A",
+      "nominal_cents": "800000/1",
+      "paid_cents": "400000/1",
+      "scenario": "anchor-050-pct"
+    },
+    {
+      "creditor": "OUTSIDE",
+      "debtor": "A",
+      "nominal_cents": "200000/1",
+      "paid_cents": "100000/1",
+      "scenario": "anchor-050-pct"
+    },
+    {
+      "creditor": "C",
+      "debtor": "B",
+      "nominal_cents": "640000/1",
+      "paid_cents": "360000/1",
+      "scenario": "anchor-050-pct"
+    },
+    {
+      "creditor": "OUTSIDE",
+      "debtor": "B",
+      "nominal_cents": "160000/1",
+      "paid_cents": "90000/1",
+      "scenario": "anchor-050-pct"
+    },
+    {
+      "creditor": "D",
+      "debtor": "C",
+      "nominal_cents": "512000/1",
+      "paid_cents": "328000/1",
+      "scenario": "anchor-050-pct"
+    },
+    {
+      "creditor": "OUTSIDE",
+      "debtor": "C",
+      "nominal_cents": "128000/1",
+      "paid_cents": "82000/1",
+      "scenario": "anchor-050-pct"
+    },
+    {
+      "creditor": "OUTSIDE",
+      "debtor": "D",
+      "nominal_cents": "500000/1",
+      "paid_cents": "378000/1",
+      "scenario": "anchor-050-pct"
+    },
+    {
+      "creditor": "F",
+      "debtor": "E",
+      "nominal_cents": "300000/1",
+      "paid_cents": "300000/1",
+      "scenario": "anchor-050-pct"
+    },
+    {
+      "creditor": "OUTSIDE",
+      "debtor": "E",
+      "nominal_cents": "100000/1",
+      "paid_cents": "100000/1",
+      "scenario": "anchor-050-pct"
+    },
+    {
+      "creditor": "E",
+      "debtor": "F",
+      "nominal_cents": "220000/1",
+      "paid_cents": "220000/1",
+      "scenario": "anchor-050-pct"
+    },
+    {
+      "creditor": "OUTSIDE",
+      "debtor": "F",
+      "nominal_cents": "80000/1",
+      "paid_cents": "80000/1",
+      "scenario": "anchor-050-pct"
+    },
+    {
+      "creditor": "E",
+      "debtor": "G",
+      "nominal_cents": "50000/1",
+      "paid_cents": "50000/1",
+      "scenario": "anchor-050-pct"
+    },
+    {
+      "creditor": "H",
+      "debtor": "G",
+      "nominal_cents": "150000/1",
+      "paid_cents": "150000/1",
+      "scenario": "anchor-050-pct"
+    },
+    {
+      "creditor": "OUTSIDE",
+      "debtor": "G",
+      "nominal_cents": "50000/1",
+      "paid_cents": "50000/1",
+      "scenario": "anchor-050-pct"
+    },
+    {
+      "creditor": "F",
+      "debtor": "H",
+      "nominal_cents": "50000/1",
+      "paid_cents": "50000/1",
+      "scenario": "anchor-050-pct"
+    },
+    {
+      "creditor": "OUTSIDE",
+      "debtor": "H",
+      "nominal_cents": "100000/1",
+      "paid_cents": "100000/1",
+      "scenario": "anchor-050-pct"
+    },
+    {
+      "creditor": "B",
+      "debtor": "A",
+      "nominal_cents": "800000/1",
+      "paid_cents": "320000/1",
+      "scenario": "anchor-060-pct"
+    },
+    {
+      "creditor": "OUTSIDE",
+      "debtor": "A",
+      "nominal_cents": "200000/1",
+      "paid_cents": "80000/1",
+      "scenario": "anchor-060-pct"
+    },
+    {
+      "creditor": "C",
+      "debtor": "B",
+      "nominal_cents": "640000/1",
+      "paid_cents": "296000/1",
+      "scenario": "anchor-060-pct"
+    },
+    {
+      "creditor": "OUTSIDE",
+      "debtor": "B",
+      "nominal_cents": "160000/1",
+      "paid_cents": "74000/1",
+      "scenario": "anchor-060-pct"
+    },
+    {
+      "creditor": "D",
+      "debtor": "C",
+      "nominal_cents": "512000/1",
+      "paid_cents": "276800/1",
+      "scenario": "anchor-060-pct"
+    },
+    {
+      "creditor": "OUTSIDE",
+      "debtor": "C",
+      "nominal_cents": "128000/1",
+      "paid_cents": "69200/1",
+      "scenario": "anchor-060-pct"
+    },
+    {
+      "creditor": "OUTSIDE",
+      "debtor": "D",
+      "nominal_cents": "500000/1",
+      "paid_cents": "326800/1",
+      "scenario": "anchor-060-pct"
+    },
+    {
+      "creditor": "F",
+      "debtor": "E",
+      "nominal_cents": "300000/1",
+      "paid_cents": "300000/1",
+      "scenario": "anchor-060-pct"
+    },
+    {
+      "creditor": "OUTSIDE",
+      "debtor": "E",
+      "nominal_cents": "100000/1",
+      "paid_cents": "100000/1",
+      "scenario": "anchor-060-pct"
+    },
+    {
+      "creditor": "E",
+      "debtor": "F",
+      "nominal_cents": "220000/1",
+      "paid_cents": "220000/1",
+      "scenario": "anchor-060-pct"
+    },
+    {
+      "creditor": "OUTSIDE",
+      "debtor": "F",
+      "nominal_cents": "80000/1",
+      "paid_cents": "80000/1",
+      "scenario": "anchor-060-pct"
+    },
+    {
+      "creditor": "E",
+      "debtor": "G",
+      "nominal_cents": "50000/1",
+      "paid_cents": "50000/1",
+      "scenario": "anchor-060-pct"
+    },
+    {
+      "creditor": "H",
+      "debtor": "G",
+      "nominal_cents": "150000/1",
+      "paid_cents": "150000/1",
+      "scenario": "anchor-060-pct"
+    },
+    {
+      "creditor": "OUTSIDE",
+      "debtor": "G",
+      "nominal_cents": "50000/1",
+      "paid_cents": "50000/1",
+      "scenario": "anchor-060-pct"
+    },
+    {
+      "creditor": "F",
+      "debtor": "H",
+      "nominal_cents": "50000/1",
+      "paid_cents": "50000/1",
+      "scenario": "anchor-060-pct"
+    },
+    {
+      "creditor": "OUTSIDE",
+      "debtor": "H",
+      "nominal_cents": "100000/1",
+      "paid_cents": "100000/1",
+      "scenario": "anchor-060-pct"
+    },
+    {
+      "creditor": "B",
+      "debtor": "A",
+      "nominal_cents": "800000/1",
+      "paid_cents": "240000/1",
+      "scenario": "anchor-070-pct"
+    },
+    {
+      "creditor": "OUTSIDE",
+      "debtor": "A",
+      "nominal_cents": "200000/1",
+      "paid_cents": "60000/1",
+      "scenario": "anchor-070-pct"
+    },
+    {
+      "creditor": "C",
+      "debtor": "B",
+      "nominal_cents": "640000/1",
+      "paid_cents": "232000/1",
+      "scenario": "anchor-070-pct"
+    },
+    {
+      "creditor": "OUTSIDE",
+      "debtor": "B",
+      "nominal_cents": "160000/1",
+      "paid_cents": "58000/1",
+      "scenario": "anchor-070-pct"
+    },
+    {
+      "creditor": "D",
+      "debtor": "C",
+      "nominal_cents": "512000/1",
+      "paid_cents": "225600/1",
+      "scenario": "anchor-070-pct"
+    },
+    {
+      "creditor": "OUTSIDE",
+      "debtor": "C",
+      "nominal_cents": "128000/1",
+      "paid_cents": "56400/1",
+      "scenario": "anchor-070-pct"
+    },
+    {
+      "creditor": "OUTSIDE",
+      "debtor": "D",
+      "nominal_cents": "500000/1",
+      "paid_cents": "275600/1",
+      "scenario": "anchor-070-pct"
+    },
+    {
+      "creditor": "F",
+      "debtor": "E",
+      "nominal_cents": "300000/1",
+      "paid_cents": "300000/1",
+      "scenario": "anchor-070-pct"
+    },
+    {
+      "creditor": "OUTSIDE",
+      "debtor": "E",
+      "nominal_cents": "100000/1",
+      "paid_cents": "100000/1",
+      "scenario": "anchor-070-pct"
+    },
+    {
+      "creditor": "E",
+      "debtor": "F",
+      "nominal_cents": "220000/1",
+      "paid_cents": "220000/1",
+      "scenario": "anchor-070-pct"
+    },
+    {
+      "creditor": "OUTSIDE",
+      "debtor": "F",
+      "nominal_cents": "80000/1",
+      "paid_cents": "80000/1",
+      "scenario": "anchor-070-pct"
+    },
+    {
+      "creditor": "E",
+      "debtor": "G",
+      "nominal_cents": "50000/1",
+      "paid_cents": "50000/1",
+      "scenario": "anchor-070-pct"
+    },
+    {
+      "creditor": "H",
+      "debtor": "G",
+      "nominal_cents": "150000/1",
+      "paid_cents": "150000/1",
+      "scenario": "anchor-070-pct"
+    },
+    {
+      "creditor": "OUTSIDE",
+      "debtor": "G",
+      "nominal_cents": "50000/1",
+      "paid_cents": "50000/1",
+      "scenario": "anchor-070-pct"
+    },
+    {
+      "creditor": "F",
+      "debtor": "H",
+      "nominal_cents": "50000/1",
+      "paid_cents": "50000/1",
+      "scenario": "anchor-070-pct"
+    },
+    {
+      "creditor": "OUTSIDE",
+      "debtor": "H",
+      "nominal_cents": "100000/1",
+      "paid_cents": "100000/1",
+      "scenario": "anchor-070-pct"
+    },
+    {
+      "creditor": "B",
+      "debtor": "A",
+      "nominal_cents": "800000/1",
+      "paid_cents": "160000/1",
+      "scenario": "anchor-080-pct"
+    },
+    {
+      "creditor": "OUTSIDE",
+      "debtor": "A",
+      "nominal_cents": "200000/1",
+      "paid_cents": "40000/1",
+      "scenario": "anchor-080-pct"
+    },
+    {
+      "creditor": "C",
+      "debtor": "B",
+      "nominal_cents": "640000/1",
+      "paid_cents": "168000/1",
+      "scenario": "anchor-080-pct"
+    },
+    {
+      "creditor": "OUTSIDE",
+      "debtor": "B",
+      "nominal_cents": "160000/1",
+      "paid_cents": "42000/1",
+      "scenario": "anchor-080-pct"
+    },
+    {
+      "creditor": "D",
+      "debtor": "C",
+      "nominal_cents": "512000/1",
+      "paid_cents": "174400/1",
+      "scenario": "anchor-080-pct"
+    },
+    {
+      "creditor": "OUTSIDE",
+      "debtor": "C",
+      "nominal_cents": "128000/1",
+      "paid_cents": "43600/1",
+      "scenario": "anchor-080-pct"
+    },
+    {
+      "creditor": "OUTSIDE",
+      "debtor": "D",
+      "nominal_cents": "500000/1",
+      "paid_cents": "224400/1",
+      "scenario": "anchor-080-pct"
+    },
+    {
+      "creditor": "F",
+      "debtor": "E",
+      "nominal_cents": "300000/1",
+      "paid_cents": "300000/1",
+      "scenario": "anchor-080-pct"
+    },
+    {
+      "creditor": "OUTSIDE",
+      "debtor": "E",
+      "nominal_cents": "100000/1",
+      "paid_cents": "100000/1",
+      "scenario": "anchor-080-pct"
+    },
+    {
+      "creditor": "E",
+      "debtor": "F",
+      "nominal_cents": "220000/1",
+      "paid_cents": "220000/1",
+      "scenario": "anchor-080-pct"
+    },
+    {
+      "creditor": "OUTSIDE",
+      "debtor": "F",
+      "nominal_cents": "80000/1",
+      "paid_cents": "80000/1",
+      "scenario": "anchor-080-pct"
+    },
+    {
+      "creditor": "E",
+      "debtor": "G",
+      "nominal_cents": "50000/1",
+      "paid_cents": "50000/1",
+      "scenario": "anchor-080-pct"
+    },
+    {
+      "creditor": "H",
+      "debtor": "G",
+      "nominal_cents": "150000/1",
+      "paid_cents": "150000/1",
+      "scenario": "anchor-080-pct"
+    },
+    {
+      "creditor": "OUTSIDE",
+      "debtor": "G",
+      "nominal_cents": "50000/1",
+      "paid_cents": "50000/1",
+      "scenario": "anchor-080-pct"
+    },
+    {
+      "creditor": "F",
+      "debtor": "H",
+      "nominal_cents": "50000/1",
+      "paid_cents": "50000/1",
+      "scenario": "anchor-080-pct"
+    },
+    {
+      "creditor": "OUTSIDE",
+      "debtor": "H",
+      "nominal_cents": "100000/1",
+      "paid_cents": "100000/1",
+      "scenario": "anchor-080-pct"
+    },
+    {
+      "creditor": "B",
+      "debtor": "A",
+      "nominal_cents": "800000/1",
+      "paid_cents": "80000/1",
+      "scenario": "anchor-090-pct"
+    },
+    {
+      "creditor": "OUTSIDE",
+      "debtor": "A",
+      "nominal_cents": "200000/1",
+      "paid_cents": "20000/1",
+      "scenario": "anchor-090-pct"
+    },
+    {
+      "creditor": "C",
+      "debtor": "B",
+      "nominal_cents": "640000/1",
+      "paid_cents": "104000/1",
+      "scenario": "anchor-090-pct"
+    },
+    {
+      "creditor": "OUTSIDE",
+      "debtor": "B",
+      "nominal_cents": "160000/1",
+      "paid_cents": "26000/1",
+      "scenario": "anchor-090-pct"
+    },
+    {
+      "creditor": "D",
+      "debtor": "C",
+      "nominal_cents": "512000/1",
+      "paid_cents": "123200/1",
+      "scenario": "anchor-090-pct"
+    },
+    {
+      "creditor": "OUTSIDE",
+      "debtor": "C",
+      "nominal_cents": "128000/1",
+      "paid_cents": "30800/1",
+      "scenario": "anchor-090-pct"
+    },
+    {
+      "creditor": "OUTSIDE",
+      "debtor": "D",
+      "nominal_cents": "500000/1",
+      "paid_cents": "173200/1",
+      "scenario": "anchor-090-pct"
+    },
+    {
+      "creditor": "F",
+      "debtor": "E",
+      "nominal_cents": "300000/1",
+      "paid_cents": "300000/1",
+      "scenario": "anchor-090-pct"
+    },
+    {
+      "creditor": "OUTSIDE",
+      "debtor": "E",
+      "nominal_cents": "100000/1",
+      "paid_cents": "100000/1",
+      "scenario": "anchor-090-pct"
+    },
+    {
+      "creditor": "E",
+      "debtor": "F",
+      "nominal_cents": "220000/1",
+      "paid_cents": "220000/1",
+      "scenario": "anchor-090-pct"
+    },
+    {
+      "creditor": "OUTSIDE",
+      "debtor": "F",
+      "nominal_cents": "80000/1",
+      "paid_cents": "80000/1",
+      "scenario": "anchor-090-pct"
+    },
+    {
+      "creditor": "E",
+      "debtor": "G",
+      "nominal_cents": "50000/1",
+      "paid_cents": "50000/1",
+      "scenario": "anchor-090-pct"
+    },
+    {
+      "creditor": "H",
+      "debtor": "G",
+      "nominal_cents": "150000/1",
+      "paid_cents": "150000/1",
+      "scenario": "anchor-090-pct"
+    },
+    {
+      "creditor": "OUTSIDE",
+      "debtor": "G",
+      "nominal_cents": "50000/1",
+      "paid_cents": "50000/1",
+      "scenario": "anchor-090-pct"
+    },
+    {
+      "creditor": "F",
+      "debtor": "H",
+      "nominal_cents": "50000/1",
+      "paid_cents": "50000/1",
+      "scenario": "anchor-090-pct"
+    },
+    {
+      "creditor": "OUTSIDE",
+      "debtor": "H",
+      "nominal_cents": "100000/1",
+      "paid_cents": "100000/1",
+      "scenario": "anchor-090-pct"
+    },
+    {
+      "creditor": "B",
+      "debtor": "A",
+      "nominal_cents": "800000/1",
+      "paid_cents": "0/1",
+      "scenario": "anchor-100-pct"
+    },
+    {
+      "creditor": "OUTSIDE",
+      "debtor": "A",
+      "nominal_cents": "200000/1",
+      "paid_cents": "0/1",
+      "scenario": "anchor-100-pct"
+    },
+    {
+      "creditor": "C",
+      "debtor": "B",
+      "nominal_cents": "640000/1",
+      "paid_cents": "40000/1",
+      "scenario": "anchor-100-pct"
+    },
+    {
+      "creditor": "OUTSIDE",
+      "debtor": "B",
+      "nominal_cents": "160000/1",
+      "paid_cents": "10000/1",
+      "scenario": "anchor-100-pct"
+    },
+    {
+      "creditor": "D",
+      "debtor": "C",
+      "nominal_cents": "512000/1",
+      "paid_cents": "72000/1",
+      "scenario": "anchor-100-pct"
+    },
+    {
+      "creditor": "OUTSIDE",
+      "debtor": "C",
+      "nominal_cents": "128000/1",
+      "paid_cents": "18000/1",
+      "scenario": "anchor-100-pct"
+    },
+    {
+      "creditor": "OUTSIDE",
+      "debtor": "D",
+      "nominal_cents": "500000/1",
+      "paid_cents": "122000/1",
+      "scenario": "anchor-100-pct"
+    },
+    {
+      "creditor": "F",
+      "debtor": "E",
+      "nominal_cents": "300000/1",
+      "paid_cents": "300000/1",
+      "scenario": "anchor-100-pct"
+    },
+    {
+      "creditor": "OUTSIDE",
+      "debtor": "E",
+      "nominal_cents": "100000/1",
+      "paid_cents": "100000/1",
+      "scenario": "anchor-100-pct"
+    },
+    {
+      "creditor": "E",
+      "debtor": "F",
+      "nominal_cents": "220000/1",
+      "paid_cents": "220000/1",
+      "scenario": "anchor-100-pct"
+    },
+    {
+      "creditor": "OUTSIDE",
+      "debtor": "F",
+      "nominal_cents": "80000/1",
+      "paid_cents": "80000/1",
+      "scenario": "anchor-100-pct"
+    },
+    {
+      "creditor": "E",
+      "debtor": "G",
+      "nominal_cents": "50000/1",
+      "paid_cents": "50000/1",
+      "scenario": "anchor-100-pct"
+    },
+    {
+      "creditor": "H",
+      "debtor": "G",
+      "nominal_cents": "150000/1",
+      "paid_cents": "150000/1",
+      "scenario": "anchor-100-pct"
+    },
+    {
+      "creditor": "OUTSIDE",
+      "debtor": "G",
+      "nominal_cents": "50000/1",
+      "paid_cents": "50000/1",
+      "scenario": "anchor-100-pct"
+    },
+    {
+      "creditor": "F",
+      "debtor": "H",
+      "nominal_cents": "50000/1",
+      "paid_cents": "50000/1",
+      "scenario": "anchor-100-pct"
+    },
+    {
+      "creditor": "OUTSIDE",
+      "debtor": "H",
+      "nominal_cents": "100000/1",
+      "paid_cents": "100000/1",
+      "scenario": "anchor-100-pct"
+    },
+    {
+      "creditor": "B",
+      "debtor": "A",
+      "nominal_cents": "800000/1",
+      "paid_cents": "400000/1",
+      "scenario": "broad-050-pct"
+    },
+    {
+      "creditor": "OUTSIDE",
+      "debtor": "A",
+      "nominal_cents": "200000/1",
+      "paid_cents": "100000/1",
+      "scenario": "broad-050-pct"
+    },
+    {
+      "creditor": "C",
+      "debtor": "B",
+      "nominal_cents": "640000/1",
+      "paid_cents": "340000/1",
+      "scenario": "broad-050-pct"
+    },
+    {
+      "creditor": "OUTSIDE",
+      "debtor": "B",
+      "nominal_cents": "160000/1",
+      "paid_cents": "85000/1",
+      "scenario": "broad-050-pct"
+    },
+    {
+      "creditor": "D",
+      "debtor": "C",
+      "nominal_cents": "512000/1",
+      "paid_cents": "292000/1",
+      "scenario": "broad-050-pct"
+    },
+    {
+      "creditor": "OUTSIDE",
+      "debtor": "C",
+      "nominal_cents": "128000/1",
+      "paid_cents": "73000/1",
+      "scenario": "broad-050-pct"
+    },
+    {
+      "creditor": "OUTSIDE",
+      "debtor": "D",
+      "nominal_cents": "500000/1",
+      "paid_cents": "317000/1",
+      "scenario": "broad-050-pct"
+    },
+    {
+      "creditor": "F",
+      "debtor": "E",
+      "nominal_cents": "300000/1",
+      "paid_cents": "296250/1",
+      "scenario": "broad-050-pct"
+    },
+    {
+      "creditor": "OUTSIDE",
+      "debtor": "E",
+      "nominal_cents": "100000/1",
+      "paid_cents": "98750/1",
+      "scenario": "broad-050-pct"
+    },
+    {
+      "creditor": "E",
+      "debtor": "F",
+      "nominal_cents": "220000/1",
+      "paid_cents": "220000/1",
+      "scenario": "broad-050-pct"
+    },
+    {
+      "creditor": "OUTSIDE",
+      "debtor": "F",
+      "nominal_cents": "80000/1",
+      "paid_cents": "80000/1",
+      "scenario": "broad-050-pct"
+    },
+    {
+      "creditor": "E",
+      "debtor": "G",
+      "nominal_cents": "50000/1",
+      "paid_cents": "25000/1",
+      "scenario": "broad-050-pct"
+    },
+    {
+      "creditor": "H",
+      "debtor": "G",
+      "nominal_cents": "150000/1",
+      "paid_cents": "75000/1",
+      "scenario": "broad-050-pct"
+    },
+    {
+      "creditor": "OUTSIDE",
+      "debtor": "G",
+      "nominal_cents": "50000/1",
+      "paid_cents": "25000/1",
+      "scenario": "broad-050-pct"
+    },
+    {
+      "creditor": "F",
+      "debtor": "H",
+      "nominal_cents": "50000/1",
+      "paid_cents": "125000/3",
+      "scenario": "broad-050-pct"
+    },
+    {
+      "creditor": "OUTSIDE",
+      "debtor": "H",
+      "nominal_cents": "100000/1",
+      "paid_cents": "250000/3",
+      "scenario": "broad-050-pct"
+    },
+    {
+      "creditor": "B",
+      "debtor": "A",
+      "nominal_cents": "800000/1",
+      "paid_cents": "800000/1",
+      "scenario": "cycle-090-pct"
+    },
+    {
+      "creditor": "OUTSIDE",
+      "debtor": "A",
+      "nominal_cents": "200000/1",
+      "paid_cents": "200000/1",
+      "scenario": "cycle-090-pct"
+    },
+    {
+      "creditor": "C",
+      "debtor": "B",
+      "nominal_cents": "640000/1",
+      "paid_cents": "640000/1",
+      "scenario": "cycle-090-pct"
+    },
+    {
+      "creditor": "OUTSIDE",
+      "debtor": "B",
+      "nominal_cents": "160000/1",
+      "paid_cents": "160000/1",
+      "scenario": "cycle-090-pct"
+    },
+    {
+      "creditor": "D",
+      "debtor": "C",
+      "nominal_cents": "512000/1",
+      "paid_cents": "512000/1",
+      "scenario": "cycle-090-pct"
+    },
+    {
+      "creditor": "OUTSIDE",
+      "debtor": "C",
+      "nominal_cents": "128000/1",
+      "paid_cents": "128000/1",
+      "scenario": "cycle-090-pct"
+    },
+    {
+      "creditor": "OUTSIDE",
+      "debtor": "D",
+      "nominal_cents": "500000/1",
+      "paid_cents": "500000/1",
+      "scenario": "cycle-090-pct"
+    },
+    {
+      "creditor": "F",
+      "debtor": "E",
+      "nominal_cents": "300000/1",
+      "paid_cents": "1915000/9",
+      "scenario": "cycle-090-pct"
+    },
+    {
+      "creditor": "OUTSIDE",
+      "debtor": "E",
+      "nominal_cents": "100000/1",
+      "paid_cents": "1915000/27",
+      "scenario": "cycle-090-pct"
+    },
+    {
+      "creditor": "E",
+      "debtor": "F",
+      "nominal_cents": "220000/1",
+      "paid_cents": "5500000/27",
+      "scenario": "cycle-090-pct"
+    },
+    {
+      "creditor": "OUTSIDE",
+      "debtor": "F",
+      "nominal_cents": "80000/1",
+      "paid_cents": "2000000/27",
+      "scenario": "cycle-090-pct"
+    },
+    {
+      "creditor": "E",
+      "debtor": "G",
+      "nominal_cents": "50000/1",
+      "paid_cents": "50000/1",
+      "scenario": "cycle-090-pct"
+    },
+    {
+      "creditor": "H",
+      "debtor": "G",
+      "nominal_cents": "150000/1",
+      "paid_cents": "150000/1",
+      "scenario": "cycle-090-pct"
+    },
+    {
+      "creditor": "OUTSIDE",
+      "debtor": "G",
+      "nominal_cents": "50000/1",
+      "paid_cents": "50000/1",
+      "scenario": "cycle-090-pct"
+    },
+    {
+      "creditor": "F",
+      "debtor": "H",
+      "nominal_cents": "50000/1",
+      "paid_cents": "50000/1",
+      "scenario": "cycle-090-pct"
+    },
+    {
+      "creditor": "OUTSIDE",
+      "debtor": "H",
+      "nominal_cents": "100000/1",
+      "paid_cents": "100000/1",
+      "scenario": "cycle-090-pct"
+    },
+    {
+      "creditor": "B",
+      "debtor": "A",
+      "nominal_cents": "800000/1",
+      "paid_cents": "560000/1",
+      "scenario": "anchor-050-rescue-anchor"
+    },
+    {
+      "creditor": "OUTSIDE",
+      "debtor": "A",
+      "nominal_cents": "200000/1",
+      "paid_cents": "140000/1",
+      "scenario": "anchor-050-rescue-anchor"
+    },
+    {
+      "creditor": "C",
+      "debtor": "B",
+      "nominal_cents": "640000/1",
+      "paid_cents": "488000/1",
+      "scenario": "anchor-050-rescue-anchor"
+    },
+    {
+      "creditor": "OUTSIDE",
+      "debtor": "B",
+      "nominal_cents": "160000/1",
+      "paid_cents": "122000/1",
+      "scenario": "anchor-050-rescue-anchor"
+    },
+    {
+      "creditor": "D",
+      "debtor": "C",
+      "nominal_cents": "512000/1",
+      "paid_cents": "430400/1",
+      "scenario": "anchor-050-rescue-anchor"
+    },
+    {
+      "creditor": "OUTSIDE",
+      "debtor": "C",
+      "nominal_cents": "128000/1",
+      "paid_cents": "107600/1",
+      "scenario": "anchor-050-rescue-anchor"
+    },
+    {
+      "creditor": "OUTSIDE",
+      "debtor": "D",
+      "nominal_cents": "500000/1",
+      "paid_cents": "480400/1",
+      "scenario": "anchor-050-rescue-anchor"
+    },
+    {
+      "creditor": "F",
+      "debtor": "E",
+      "nominal_cents": "300000/1",
+      "paid_cents": "300000/1",
+      "scenario": "anchor-050-rescue-anchor"
+    },
+    {
+      "creditor": "OUTSIDE",
+      "debtor": "E",
+      "nominal_cents": "100000/1",
+      "paid_cents": "100000/1",
+      "scenario": "anchor-050-rescue-anchor"
+    },
+    {
+      "creditor": "E",
+      "debtor": "F",
+      "nominal_cents": "220000/1",
+      "paid_cents": "220000/1",
+      "scenario": "anchor-050-rescue-anchor"
+    },
+    {
+      "creditor": "OUTSIDE",
+      "debtor": "F",
+      "nominal_cents": "80000/1",
+      "paid_cents": "80000/1",
+      "scenario": "anchor-050-rescue-anchor"
+    },
+    {
+      "creditor": "E",
+      "debtor": "G",
+      "nominal_cents": "50000/1",
+      "paid_cents": "50000/1",
+      "scenario": "anchor-050-rescue-anchor"
+    },
+    {
+      "creditor": "H",
+      "debtor": "G",
+      "nominal_cents": "150000/1",
+      "paid_cents": "150000/1",
+      "scenario": "anchor-050-rescue-anchor"
+    },
+    {
+      "creditor": "OUTSIDE",
+      "debtor": "G",
+      "nominal_cents": "50000/1",
+      "paid_cents": "50000/1",
+      "scenario": "anchor-050-rescue-anchor"
+    },
+    {
+      "creditor": "F",
+      "debtor": "H",
+      "nominal_cents": "50000/1",
+      "paid_cents": "50000/1",
+      "scenario": "anchor-050-rescue-anchor"
+    },
+    {
+      "creditor": "OUTSIDE",
+      "debtor": "H",
+      "nominal_cents": "100000/1",
+      "paid_cents": "100000/1",
+      "scenario": "anchor-050-rescue-anchor"
+    },
+    {
+      "creditor": "B",
+      "debtor": "A",
+      "nominal_cents": "800000/1",
+      "paid_cents": "420000/1",
+      "scenario": "anchor-050-rescue-equal"
+    },
+    {
+      "creditor": "OUTSIDE",
+      "debtor": "A",
+      "nominal_cents": "200000/1",
+      "paid_cents": "105000/1",
+      "scenario": "anchor-050-rescue-equal"
+    },
+    {
+      "creditor": "C",
+      "debtor": "B",
+      "nominal_cents": "640000/1",
+      "paid_cents": "396000/1",
+      "scenario": "anchor-050-rescue-equal"
+    },
+    {
+      "creditor": "OUTSIDE",
+      "debtor": "B",
+      "nominal_cents": "160000/1",
+      "paid_cents": "99000/1",
+      "scenario": "anchor-050-rescue-equal"
+    },
+    {
+      "creditor": "D",
+      "debtor": "C",
+      "nominal_cents": "512000/1",
+      "paid_cents": "376800/1",
+      "scenario": "anchor-050-rescue-equal"
+    },
+    {
+      "creditor": "OUTSIDE",
+      "debtor": "C",
+      "nominal_cents": "128000/1",
+      "paid_cents": "94200/1",
+      "scenario": "anchor-050-rescue-equal"
+    },
+    {
+      "creditor": "OUTSIDE",
+      "debtor": "D",
+      "nominal_cents": "500000/1",
+      "paid_cents": "451800/1",
+      "scenario": "anchor-050-rescue-equal"
+    },
+    {
+      "creditor": "F",
+      "debtor": "E",
+      "nominal_cents": "300000/1",
+      "paid_cents": "300000/1",
+      "scenario": "anchor-050-rescue-equal"
+    },
+    {
+      "creditor": "OUTSIDE",
+      "debtor": "E",
+      "nominal_cents": "100000/1",
+      "paid_cents": "100000/1",
+      "scenario": "anchor-050-rescue-equal"
+    },
+    {
+      "creditor": "E",
+      "debtor": "F",
+      "nominal_cents": "220000/1",
+      "paid_cents": "220000/1",
+      "scenario": "anchor-050-rescue-equal"
+    },
+    {
+      "creditor": "OUTSIDE",
+      "debtor": "F",
+      "nominal_cents": "80000/1",
+      "paid_cents": "80000/1",
+      "scenario": "anchor-050-rescue-equal"
+    },
+    {
+      "creditor": "E",
+      "debtor": "G",
+      "nominal_cents": "50000/1",
+      "paid_cents": "50000/1",
+      "scenario": "anchor-050-rescue-equal"
+    },
+    {
+      "creditor": "H",
+      "debtor": "G",
+      "nominal_cents": "150000/1",
+      "paid_cents": "150000/1",
+      "scenario": "anchor-050-rescue-equal"
+    },
+    {
+      "creditor": "OUTSIDE",
+      "debtor": "G",
+      "nominal_cents": "50000/1",
+      "paid_cents": "50000/1",
+      "scenario": "anchor-050-rescue-equal"
+    },
+    {
+      "creditor": "F",
+      "debtor": "H",
+      "nominal_cents": "50000/1",
+      "paid_cents": "50000/1",
+      "scenario": "anchor-050-rescue-equal"
+    },
+    {
+      "creditor": "OUTSIDE",
+      "debtor": "H",
+      "nominal_cents": "100000/1",
+      "paid_cents": "100000/1",
+      "scenario": "anchor-050-rescue-equal"
+    }
+  ],
+  "node_ids": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F",
+    "G",
+    "H"
+  ],
+  "payments": [
+    {
+      "cash_cents": "1000000/1",
+      "default": false,
+      "equity_cents": "0/1",
+      "incoming_cents": "0/1",
+      "node": "A",
+      "nominal_cents": "1000000/1",
+      "outside_paid_cents": "200000/1",
+      "paid_cents": "1000000/1",
+      "paid_usd_display": "10000.00",
+      "recovery_ratio": "1/1",
+      "residual_cents": "0/1",
+      "scenario": "anchor-000-pct"
+    },
+    {
+      "cash_cents": "50000/1",
+      "default": false,
+      "equity_cents": "50000/1",
+      "incoming_cents": "800000/1",
+      "node": "B",
+      "nominal_cents": "800000/1",
+      "outside_paid_cents": "160000/1",
+      "paid_cents": "800000/1",
+      "paid_usd_display": "8000.00",
+      "recovery_ratio": "1/1",
+      "residual_cents": "0/1",
+      "scenario": "anchor-000-pct"
+    },
+    {
+      "cash_cents": "50000/1",
+      "default": false,
+      "equity_cents": "50000/1",
+      "incoming_cents": "640000/1",
+      "node": "C",
+      "nominal_cents": "640000/1",
+      "outside_paid_cents": "128000/1",
+      "paid_cents": "640000/1",
+      "paid_usd_display": "6400.00",
+      "recovery_ratio": "1/1",
+      "residual_cents": "0/1",
+      "scenario": "anchor-000-pct"
+    },
+    {
+      "cash_cents": "50000/1",
+      "default": false,
+      "equity_cents": "62000/1",
+      "incoming_cents": "512000/1",
+      "node": "D",
+      "nominal_cents": "500000/1",
+      "outside_paid_cents": "500000/1",
+      "paid_cents": "500000/1",
+      "paid_usd_display": "5000.00",
+      "recovery_ratio": "1/1",
+      "residual_cents": "0/1",
+      "scenario": "anchor-000-pct"
+    },
+    {
+      "cash_cents": "300000/1",
+      "default": false,
+      "equity_cents": "170000/1",
+      "incoming_cents": "270000/1",
+      "node": "E",
+      "nominal_cents": "400000/1",
+      "outside_paid_cents": "100000/1",
+      "paid_cents": "400000/1",
+      "paid_usd_display": "4000.00",
+      "recovery_ratio": "1/1",
+      "residual_cents": "0/1",
+      "scenario": "anchor-000-pct"
+    },
+    {
+      "cash_cents": "150000/1",
+      "default": false,
+      "equity_cents": "200000/1",
+      "incoming_cents": "350000/1",
+      "node": "F",
+      "nominal_cents": "300000/1",
+      "outside_paid_cents": "80000/1",
+      "paid_cents": "300000/1",
+      "paid_usd_display": "3000.00",
+      "recovery_ratio": "1/1",
+      "residual_cents": "0/1",
+      "scenario": "anchor-000-pct"
+    },
+    {
+      "cash_cents": "250000/1",
+      "default": false,
+      "equity_cents": "0/1",
+      "incoming_cents": "0/1",
+      "node": "G",
+      "nominal_cents": "250000/1",
+      "outside_paid_cents": "50000/1",
+      "paid_cents": "250000/1",
+      "paid_usd_display": "2500.00",
+      "recovery_ratio": "1/1",
+      "residual_cents": "0/1",
+      "scenario": "anchor-000-pct"
+    },
+    {
+      "cash_cents": "100000/1",
+      "default": false,
+      "equity_cents": "100000/1",
+      "incoming_cents": "150000/1",
+      "node": "H",
+      "nominal_cents": "150000/1",
+      "outside_paid_cents": "100000/1",
+      "paid_cents": "150000/1",
+      "paid_usd_display": "1500.00",
+      "recovery_ratio": "1/1",
+      "residual_cents": "0/1",
+      "scenario": "anchor-000-pct"
+    },
+    {
+      "cash_cents": "900000/1",
+      "default": true,
+      "equity_cents": "0/1",
+      "incoming_cents": "0/1",
+      "node": "A",
+      "nominal_cents": "1000000/1",
+      "outside_paid_cents": "180000/1",
+      "paid_cents": "900000/1",
+      "paid_usd_display": "9000.00",
+      "recovery_ratio": "9/10",
+      "residual_cents": "0/1",
+      "scenario": "anchor-010-pct"
+    },
+    {
+      "cash_cents": "50000/1",
+      "default": true,
+      "equity_cents": "0/1",
+      "incoming_cents": "720000/1",
+      "node": "B",
+      "nominal_cents": "800000/1",
+      "outside_paid_cents": "154000/1",
+      "paid_cents": "770000/1",
+      "paid_usd_display": "7700.00",
+      "recovery_ratio": "77/80",
+      "residual_cents": "0/1",
+      "scenario": "anchor-010-pct"
+    },
+    {
+      "cash_cents": "50000/1",
+      "default": false,
+      "equity_cents": "26000/1",
+      "incoming_cents": "616000/1",
+      "node": "C",
+      "nominal_cents": "640000/1",
+      "outside_paid_cents": "128000/1",
+      "paid_cents": "640000/1",
+      "paid_usd_display": "6400.00",
+      "recovery_ratio": "1/1",
+      "residual_cents": "0/1",
+      "scenario": "anchor-010-pct"
+    },
+    {
+      "cash_cents": "50000/1",
+      "default": false,
+      "equity_cents": "62000/1",
+      "incoming_cents": "512000/1",
+      "node": "D",
+      "nominal_cents": "500000/1",
+      "outside_paid_cents": "500000/1",
+      "paid_cents": "500000/1",
+      "paid_usd_display": "5000.00",
+      "recovery_ratio": "1/1",
+      "residual_cents": "0/1",
+      "scenario": "anchor-010-pct"
+    },
+    {
+      "cash_cents": "300000/1",
+      "default": false,
+      "equity_cents": "170000/1",
+      "incoming_cents": "270000/1",
+      "node": "E",
+      "nominal_cents": "400000/1",
+      "outside_paid_cents": "100000/1",
+      "paid_cents": "400000/1",
+      "paid_usd_display": "4000.00",
+      "recovery_ratio": "1/1",
+      "residual_cents": "0/1",
+      "scenario": "anchor-010-pct"
+    },
+    {
+      "cash_cents": "150000/1",
+      "default": false,
+      "equity_cents": "200000/1",
+      "incoming_cents": "350000/1",
+      "node": "F",
+      "nominal_cents": "300000/1",
+      "outside_paid_cents": "80000/1",
+      "paid_cents": "300000/1",
+      "paid_usd_display": "3000.00",
+      "recovery_ratio": "1/1",
+      "residual_cents": "0/1",
+      "scenario": "anchor-010-pct"
+    },
+    {
+      "cash_cents": "250000/1",
+      "default": false,
+      "equity_cents": "0/1",
+      "incoming_cents": "0/1",
+      "node": "G",
+      "nominal_cents": "250000/1",
+      "outside_paid_cents": "50000/1",
+      "paid_cents": "250000/1",
+      "paid_usd_display": "2500.00",
+      "recovery_ratio": "1/1",
+      "residual_cents": "0/1",
+      "scenario": "anchor-010-pct"
+    },
+    {
+      "cash_cents": "100000/1",
+      "default": false,
+      "equity_cents": "100000/1",
+      "incoming_cents": "150000/1",
+      "node": "H",
+      "nominal_cents": "150000/1",
+      "outside_paid_cents": "100000/1",
+      "paid_cents": "150000/1",
+      "paid_usd_display": "1500.00",
+      "recovery_ratio": "1/1",
+      "residual_cents": "0/1",
+      "scenario": "anchor-010-pct"
+    },
+    {
+      "cash_cents": "800000/1",
+      "default": true,
+      "equity_cents": "0/1",
+      "incoming_cents": "0/1",
+      "node": "A",
+      "nominal_cents": "1000000/1",
+      "outside_paid_cents": "160000/1",
+      "paid_cents": "800000/1",
+      "paid_usd_display": "8000.00",
+      "recovery_ratio": "4/5",
+      "residual_cents": "0/1",
+      "scenario": "anchor-020-pct"
+    },
+    {
+      "cash_cents": "50000/1",
+      "default": true,
+      "equity_cents": "0/1",
+      "incoming_cents": "640000/1",
+      "node": "B",
+      "nominal_cents": "800000/1",
+      "outside_paid_cents": "138000/1",
+      "paid_cents": "690000/1",
+      "paid_usd_display": "6900.00",
+      "recovery_ratio": "69/80",
+      "residual_cents": "0/1",
+      "scenario": "anchor-020-pct"
+    },
+    {
+      "cash_cents": "50000/1",
+      "default": true,
+      "equity_cents": "0/1",
+      "incoming_cents": "552000/1",
+      "node": "C",
+      "nominal_cents": "640000/1",
+      "outside_paid_cents": "120400/1",
+      "paid_cents": "602000/1",
+      "paid_usd_display": "6020.00",
+      "recovery_ratio": "301/320",
+      "residual_cents": "0/1",
+      "scenario": "anchor-020-pct"
+    },
+    {
+      "cash_cents": "50000/1",
+      "default": false,
+      "equity_cents": "31600/1",
+      "incoming_cents": "481600/1",
+      "node": "D",
+      "nominal_cents": "500000/1",
+      "outside_paid_cents": "500000/1",
+      "paid_cents": "500000/1",
+      "paid_usd_display": "5000.00",
+      "recovery_ratio": "1/1",
+      "residual_cents": "0/1",
+      "scenario": "anchor-020-pct"
+    },
+    {
+      "cash_cents": "300000/1",
+      "default": false,
+      "equity_cents": "170000/1",
+      "incoming_cents": "270000/1",
+      "node": "E",
+      "nominal_cents": "400000/1",
+      "outside_paid_cents": "100000/1",
+      "paid_cents": "400000/1",
+      "paid_usd_display": "4000.00",
+      "recovery_ratio": "1/1",
+      "residual_cents": "0/1",
+      "scenario": "anchor-020-pct"
+    },
+    {
+      "cash_cents": "150000/1",
+      "default": false,
+      "equity_cents": "200000/1",
+      "incoming_cents": "350000/1",
+      "node": "F",
+      "nominal_cents": "300000/1",
+      "outside_paid_cents": "80000/1",
+      "paid_cents": "300000/1",
+      "paid_usd_display": "3000.00",
+      "recovery_ratio": "1/1",
+      "residual_cents": "0/1",
+      "scenario": "anchor-020-pct"
+    },
+    {
+      "cash_cents": "250000/1",
+      "default": false,
+      "equity_cents": "0/1",
+      "incoming_cents": "0/1",
+      "node": "G",
+      "nominal_cents": "250000/1",
+      "outside_paid_cents": "50000/1",
+      "paid_cents": "250000/1",
+      "paid_usd_display": "2500.00",
+      "recovery_ratio": "1/1",
+      "residual_cents": "0/1",
+      "scenario": "anchor-020-pct"
+    },
+    {
+      "cash_cents": "100000/1",
+      "default": false,
+      "equity_cents": "100000/1",
+      "incoming_cents": "150000/1",
+      "node": "H",
+      "nominal_cents": "150000/1",
+      "outside_paid_cents": "100000/1",
+      "paid_cents": "150000/1",
+      "paid_usd_display": "1500.00",
+      "recovery_ratio": "1/1",
+      "residual_cents": "0/1",
+      "scenario": "anchor-020-pct"
+    },
+    {
+      "cash_cents": "700000/1",
+      "default": true,
+      "equity_cents": "0/1",
+      "incoming_cents": "0/1",
+      "node": "A",
+      "nominal_cents": "1000000/1",
+      "outside_paid_cents": "140000/1",
+      "paid_cents": "700000/1",
+      "paid_usd_display": "7000.00",
+      "recovery_ratio": "7/10",
+      "residual_cents": "0/1",
+      "scenario": "anchor-030-pct"
+    },
+    {
+      "cash_cents": "50000/1",
+      "default": true,
+      "equity_cents": "0/1",
+      "incoming_cents": "560000/1",
+      "node": "B",
+      "nominal_cents": "800000/1",
+      "outside_paid_cents": "122000/1",
+      "paid_cents": "610000/1",
+      "paid_usd_display": "6100.00",
+      "recovery_ratio": "61/80",
+      "residual_cents": "0/1",
+      "scenario": "anchor-030-pct"
+    },
+    {
+      "cash_cents": "50000/1",
+      "default": true,
+      "equity_cents": "0/1",
+      "incoming_cents": "488000/1",
+      "node": "C",
+      "nominal_cents": "640000/1",
+      "outside_paid_cents": "107600/1",
+      "paid_cents": "538000/1",
+      "paid_usd_display": "5380.00",
+      "recovery_ratio": "269/320",
+      "residual_cents": "0/1",
+      "scenario": "anchor-030-pct"
+    },
+    {
+      "cash_cents": "50000/1",
+      "default": true,
+      "equity_cents": "0/1",
+      "incoming_cents": "430400/1",
+      "node": "D",
+      "nominal_cents": "500000/1",
+      "outside_paid_cents": "480400/1",
+      "paid_cents": "480400/1",
+      "paid_usd_display": "4804.00",
+      "recovery_ratio": "1201/1250",
+      "residual_cents": "0/1",
+      "scenario": "anchor-030-pct"
+    },
+    {
+      "cash_cents": "300000/1",
+      "default": false,
+      "equity_cents": "170000/1",
+      "incoming_cents": "270000/1",
+      "node": "E",
+      "nominal_cents": "400000/1",
+      "outside_paid_cents": "100000/1",
+      "paid_cents": "400000/1",
+      "paid_usd_display": "4000.00",
+      "recovery_ratio": "1/1",
+      "residual_cents": "0/1",
+      "scenario": "anchor-030-pct"
+    },
+    {
+      "cash_cents": "150000/1",
+      "default": false,
+      "equity_cents": "200000/1",
+      "incoming_cents": "350000/1",
+      "node": "F",
+      "nominal_cents": "300000/1",
+      "outside_paid_cents": "80000/1",
+      "paid_cents": "300000/1",
+      "paid_usd_display": "3000.00",
+      "recovery_ratio": "1/1",
+      "residual_cents": "0/1",
+      "scenario": "anchor-030-pct"
+    },
+    {
+      "cash_cents": "250000/1",
+      "default": false,
+      "equity_cents": "0/1",
+      "incoming_cents": "0/1",
+      "node": "G",
+      "nominal_cents": "250000/1",
+      "outside_paid_cents": "50000/1",
+      "paid_cents": "250000/1",
+      "paid_usd_display": "2500.00",
+      "recovery_ratio": "1/1",
+      "residual_cents": "0/1",
+      "scenario": "anchor-030-pct"
+    },
+    {
+      "cash_cents": "100000/1",
+      "default": false,
+      "equity_cents": "100000/1",
+      "incoming_cents": "150000/1",
+      "node": "H",
+      "nominal_cents": "150000/1",
+      "outside_paid_cents": "100000/1",
+      "paid_cents": "150000/1",
+      "paid_usd_display": "1500.00",
+      "recovery_ratio": "1/1",
+      "residual_cents": "0/1",
+      "scenario": "anchor-030-pct"
+    },
+    {
+      "cash_cents": "600000/1",
+      "default": true,
+      "equity_cents": "0/1",
+      "incoming_cents": "0/1",
+      "node": "A",
+      "nominal_cents": "1000000/1",
+      "outside_paid_cents": "120000/1",
+      "paid_cents": "600000/1",
+      "paid_usd_display": "6000.00",
+      "recovery_ratio": "3/5",
+      "residual_cents": "0/1",
+      "scenario": "anchor-040-pct"
+    },
+    {
+      "cash_cents": "50000/1",
+      "default": true,
+      "equity_cents": "0/1",
+      "incoming_cents": "480000/1",
+      "node": "B",
+      "nominal_cents": "800000/1",
+      "outside_paid_cents": "106000/1",
+      "paid_cents": "530000/1",
+      "paid_usd_display": "5300.00",
+      "recovery_ratio": "53/80",
+      "residual_cents": "0/1",
+      "scenario": "anchor-040-pct"
+    },
+    {
+      "cash_cents": "50000/1",
+      "default": true,
+      "equity_cents": "0/1",
+      "incoming_cents": "424000/1",
+      "node": "C",
+      "nominal_cents": "640000/1",
+      "outside_paid_cents": "94800/1",
+      "paid_cents": "474000/1",
+      "paid_usd_display": "4740.00",
+      "recovery_ratio": "237/320",
+      "residual_cents": "0/1",
+      "scenario": "anchor-040-pct"
+    },
+    {
+      "cash_cents": "50000/1",
+      "default": true,
+      "equity_cents": "0/1",
+      "incoming_cents": "379200/1",
+      "node": "D",
+      "nominal_cents": "500000/1",
+      "outside_paid_cents": "429200/1",
+      "paid_cents": "429200/1",
+      "paid_usd_display": "4292.00",
+      "recovery_ratio": "1073/1250",
+      "residual_cents": "0/1",
+      "scenario": "anchor-040-pct"
+    },
+    {
+      "cash_cents": "300000/1",
+      "default": false,
+      "equity_cents": "170000/1",
+      "incoming_cents": "270000/1",
+      "node": "E",
+      "nominal_cents": "400000/1",
+      "outside_paid_cents": "100000/1",
+      "paid_cents": "400000/1",
+      "paid_usd_display": "4000.00",
+      "recovery_ratio": "1/1",
+      "residual_cents": "0/1",
+      "scenario": "anchor-040-pct"
+    },
+    {
+      "cash_cents": "150000/1",
+      "default": false,
+      "equity_cents": "200000/1",
+      "incoming_cents": "350000/1",
+      "node": "F",
+      "nominal_cents": "300000/1",
+      "outside_paid_cents": "80000/1",
+      "paid_cents": "300000/1",
+      "paid_usd_display": "3000.00",
+      "recovery_ratio": "1/1",
+      "residual_cents": "0/1",
+      "scenario": "anchor-040-pct"
+    },
+    {
+      "cash_cents": "250000/1",
+      "default": false,
+      "equity_cents": "0/1",
+      "incoming_cents": "0/1",
+      "node": "G",
+      "nominal_cents": "250000/1",
+      "outside_paid_cents": "50000/1",
+      "paid_cents": "250000/1",
+      "paid_usd_display": "2500.00",
+      "recovery_ratio": "1/1",
+      "residual_cents": "0/1",
+      "scenario": "anchor-040-pct"
+    },
+    {
+      "cash_cents": "100000/1",
+      "default": false,
+      "equity_cents": "100000/1",
+      "incoming_cents": "150000/1",
+      "node": "H",
+      "nominal_cents": "150000/1",
+      "outside_paid_cents": "100000/1",
+      "paid_cents": "150000/1",
+      "paid_usd_display": "1500.00",
+      "recovery_ratio": "1/1",
+      "residual_cents": "0/1",
+      "scenario": "anchor-040-pct"
+    },
+    {
+      "cash_cents": "500000/1",
+      "default": true,
+      "equity_cents": "0/1",
+      "incoming_cents": "0/1",
+      "node": "A",
+      "nominal_cents": "1000000/1",
+      "outside_paid_cents": "100000/1",
+      "paid_cents": "500000/1",
+      "paid_usd_display": "5000.00",
+      "recovery_ratio": "1/2",
+      "residual_cents": "0/1",
+      "scenario": "anchor-050-pct"
+    },
+    {
+      "cash_cents": "50000/1",
+      "default": true,
+      "equity_cents": "0/1",
+      "incoming_cents": "400000/1",
+      "node": "B",
+      "nominal_cents": "800000/1",
+      "outside_paid_cents": "90000/1",
+      "paid_cents": "450000/1",
+      "paid_usd_display": "4500.00",
+      "recovery_ratio": "9/16",
+      "residual_cents": "0/1",
+      "scenario": "anchor-050-pct"
+    },
+    {
+      "cash_cents": "50000/1",
+      "default": true,
+      "equity_cents": "0/1",
+      "incoming_cents": "360000/1",
+      "node": "C",
+      "nominal_cents": "640000/1",
+      "outside_paid_cents": "82000/1",
+      "paid_cents": "410000/1",
+      "paid_usd_display": "4100.00",
+      "recovery_ratio": "41/64",
+      "residual_cents": "0/1",
+      "scenario": "anchor-050-pct"
+    },
+    {
+      "cash_cents": "50000/1",
+      "default": true,
+      "equity_cents": "0/1",
+      "incoming_cents": "328000/1",
+      "node": "D",
+      "nominal_cents": "500000/1",
+      "outside_paid_cents": "378000/1",
+      "paid_cents": "378000/1",
+      "paid_usd_display": "3780.00",
+      "recovery_ratio": "189/250",
+      "residual_cents": "0/1",
+      "scenario": "anchor-050-pct"
+    },
+    {
+      "cash_cents": "300000/1",
+      "default": false,
+      "equity_cents": "170000/1",
+      "incoming_cents": "270000/1",
+      "node": "E",
+      "nominal_cents": "400000/1",
+      "outside_paid_cents": "100000/1",
+      "paid_cents": "400000/1",
+      "paid_usd_display": "4000.00",
+      "recovery_ratio": "1/1",
+      "residual_cents": "0/1",
+      "scenario": "anchor-050-pct"
+    },
+    {
+      "cash_cents": "150000/1",
+      "default": false,
+      "equity_cents": "200000/1",
+      "incoming_cents": "350000/1",
+      "node": "F",
+      "nominal_cents": "300000/1",
+      "outside_paid_cents": "80000/1",
+      "paid_cents": "300000/1",
+      "paid_usd_display": "3000.00",
+      "recovery_ratio": "1/1",
+      "residual_cents": "0/1",
+      "scenario": "anchor-050-pct"
+    },
+    {
+      "cash_cents": "250000/1",
+      "default": false,
+      "equity_cents": "0/1",
+      "incoming_cents": "0/1",
+      "node": "G",
+      "nominal_cents": "250000/1",
+      "outside_paid_cents": "50000/1",
+      "paid_cents": "250000/1",
+      "paid_usd_display": "2500.00",
+      "recovery_ratio": "1/1",
+      "residual_cents": "0/1",
+      "scenario": "anchor-050-pct"
+    },
+    {
+      "cash_cents": "100000/1",
+      "default": false,
+      "equity_cents": "100000/1",
+      "incoming_cents": "150000/1",
+      "node": "H",
+      "nominal_cents": "150000/1",
+      "outside_paid_cents": "100000/1",
+      "paid_cents": "150000/1",
+      "paid_usd_display": "1500.00",
+      "recovery_ratio": "1/1",
+      "residual_cents": "0/1",
+      "scenario": "anchor-050-pct"
+    },
+    {
+      "cash_cents": "400000/1",
+      "default": true,
+      "equity_cents": "0/1",
+      "incoming_cents": "0/1",
+      "node": "A",
+      "nominal_cents": "1000000/1",
+      "outside_paid_cents": "80000/1",
+      "paid_cents": "400000/1",
+      "paid_usd_display": "4000.00",
+      "recovery_ratio": "2/5",
+      "residual_cents": "0/1",
+      "scenario": "anchor-060-pct"
+    },
+    {
+      "cash_cents": "50000/1",
+      "default": true,
+      "equity_cents": "0/1",
+      "incoming_cents": "320000/1",
+      "node": "B",
+      "nominal_cents": "800000/1",
+      "outside_paid_cents": "74000/1",
+      "paid_cents": "370000/1",
+      "paid_usd_display": "3700.00",
+      "recovery_ratio": "37/80",
+      "residual_cents": "0/1",
+      "scenario": "anchor-060-pct"
+    },
+    {
+      "cash_cents": "50000/1",
+      "default": true,
+      "equity_cents": "0/1",
+      "incoming_cents": "296000/1",
+      "node": "C",
+      "nominal_cents": "640000/1",
+      "outside_paid_cents": "69200/1",
+      "paid_cents": "346000/1",
+      "paid_usd_display": "3460.00",
+      "recovery_ratio": "173/320",
+      "residual_cents": "0/1",
+      "scenario": "anchor-060-pct"
+    },
+    {
+      "cash_cents": "50000/1",
+      "default": true,
+      "equity_cents": "0/1",
+      "incoming_cents": "276800/1",
+      "node": "D",
+      "nominal_cents": "500000/1",
+      "outside_paid_cents": "326800/1",
+      "paid_cents": "326800/1",
+      "paid_usd_display": "3268.00",
+      "recovery_ratio": "817/1250",
+      "residual_cents": "0/1",
+      "scenario": "anchor-060-pct"
+    },
+    {
+      "cash_cents": "300000/1",
+      "default": false,
+      "equity_cents": "170000/1",
+      "incoming_cents": "270000/1",
+      "node": "E",
+      "nominal_cents": "400000/1",
+      "outside_paid_cents": "100000/1",
+      "paid_cents": "400000/1",
+      "paid_usd_display": "4000.00",
+      "recovery_ratio": "1/1",
+      "residual_cents": "0/1",
+      "scenario": "anchor-060-pct"
+    },
+    {
+      "cash_cents": "150000/1",
+      "default": false,
+      "equity_cents": "200000/1",
+      "incoming_cents": "350000/1",
+      "node": "F",
+      "nominal_cents": "300000/1",
+      "outside_paid_cents": "80000/1",
+      "paid_cents": "300000/1",
+      "paid_usd_display": "3000.00",
+      "recovery_ratio": "1/1",
+      "residual_cents": "0/1",
+      "scenario": "anchor-060-pct"
+    },
+    {
+      "cash_cents": "250000/1",
+      "default": false,
+      "equity_cents": "0/1",
+      "incoming_cents": "0/1",
+      "node": "G",
+      "nominal_cents": "250000/1",
+      "outside_paid_cents": "50000/1",
+      "paid_cents": "250000/1",
+      "paid_usd_display": "2500.00",
+      "recovery_ratio": "1/1",
+      "residual_cents": "0/1",
+      "scenario": "anchor-060-pct"
+    },
+    {
+      "cash_cents": "100000/1",
+      "default": false,
+      "equity_cents": "100000/1",
+      "incoming_cents": "150000/1",
+      "node": "H",
+      "nominal_cents": "150000/1",
+      "outside_paid_cents": "100000/1",
+      "paid_cents": "150000/1",
+      "paid_usd_display": "1500.00",
+      "recovery_ratio": "1/1",
+      "residual_cents": "0/1",
+      "scenario": "anchor-060-pct"
+    },
+    {
+      "cash_cents": "300000/1",
+      "default": true,
+      "equity_cents": "0/1",
+      "incoming_cents": "0/1",
+      "node": "A",
+      "nominal_cents": "1000000/1",
+      "outside_paid_cents": "60000/1",
+      "paid_cents": "300000/1",
+      "paid_usd_display": "3000.00",
+      "recovery_ratio": "3/10",
+      "residual_cents": "0/1",
+      "scenario": "anchor-070-pct"
+    },
+    {
+      "cash_cents": "50000/1",
+      "default": true,
+      "equity_cents": "0/1",
+      "incoming_cents": "240000/1",
+      "node": "B",
+      "nominal_cents": "800000/1",
+      "outside_paid_cents": "58000/1",
+      "paid_cents": "290000/1",
+      "paid_usd_display": "2900.00",
+      "recovery_ratio": "29/80",
+      "residual_cents": "0/1",
+      "scenario": "anchor-070-pct"
+    },
+    {
+      "cash_cents": "50000/1",
+      "default": true,
+      "equity_cents": "0/1",
+      "incoming_cents": "232000/1",
+      "node": "C",
+      "nominal_cents": "640000/1",
+      "outside_paid_cents": "56400/1",
+      "paid_cents": "282000/1",
+      "paid_usd_display": "2820.00",
+      "recovery_ratio": "141/320",
+      "residual_cents": "0/1",
+      "scenario": "anchor-070-pct"
+    },
+    {
+      "cash_cents": "50000/1",
+      "default": true,
+      "equity_cents": "0/1",
+      "incoming_cents": "225600/1",
+      "node": "D",
+      "nominal_cents": "500000/1",
+      "outside_paid_cents": "275600/1",
+      "paid_cents": "275600/1",
+      "paid_usd_display": "2756.00",
+      "recovery_ratio": "689/1250",
+      "residual_cents": "0/1",
+      "scenario": "anchor-070-pct"
+    },
+    {
+      "cash_cents": "300000/1",
+      "default": false,
+      "equity_cents": "170000/1",
+      "incoming_cents": "270000/1",
+      "node": "E",
+      "nominal_cents": "400000/1",
+      "outside_paid_cents": "100000/1",
+      "paid_cents": "400000/1",
+      "paid_usd_display": "4000.00",
+      "recovery_ratio": "1/1",
+      "residual_cents": "0/1",
+      "scenario": "anchor-070-pct"
+    },
+    {
+      "cash_cents": "150000/1",
+      "default": false,
+      "equity_cents": "200000/1",
+      "incoming_cents": "350000/1",
+      "node": "F",
+      "nominal_cents": "300000/1",
+      "outside_paid_cents": "80000/1",
+      "paid_cents": "300000/1",
+      "paid_usd_display": "3000.00",
+      "recovery_ratio": "1/1",
+      "residual_cents": "0/1",
+      "scenario": "anchor-070-pct"
+    },
+    {
+      "cash_cents": "250000/1",
+      "default": false,
+      "equity_cents": "0/1",
+      "incoming_cents": "0/1",
+      "node": "G",
+      "nominal_cents": "250000/1",
+      "outside_paid_cents": "50000/1",
+      "paid_cents": "250000/1",
+      "paid_usd_display": "2500.00",
+      "recovery_ratio": "1/1",
+      "residual_cents": "0/1",
+      "scenario": "anchor-070-pct"
+    },
+    {
+      "cash_cents": "100000/1",
+      "default": false,
+      "equity_cents": "100000/1",
+      "incoming_cents": "150000/1",
+      "node": "H",
+      "nominal_cents": "150000/1",
+      "outside_paid_cents": "100000/1",
+      "paid_cents": "150000/1",
+      "paid_usd_display": "1500.00",
+      "recovery_ratio": "1/1",
+      "residual_cents": "0/1",
+      "scenario": "anchor-070-pct"
+    },
+    {
+      "cash_cents": "200000/1",
+      "default": true,
+      "equity_cents": "0/1",
+      "incoming_cents": "0/1",
+      "node": "A",
+      "nominal_cents": "1000000/1",
+      "outside_paid_cents": "40000/1",
+      "paid_cents": "200000/1",
+      "paid_usd_display": "2000.00",
+      "recovery_ratio": "1/5",
+      "residual_cents": "0/1",
+      "scenario": "anchor-080-pct"
+    },
+    {
+      "cash_cents": "50000/1",
+      "default": true,
+      "equity_cents": "0/1",
+      "incoming_cents": "160000/1",
+      "node": "B",
+      "nominal_cents": "800000/1",
+      "outside_paid_cents": "42000/1",
+      "paid_cents": "210000/1",
+      "paid_usd_display": "2100.00",
+      "recovery_ratio": "21/80",
+      "residual_cents": "0/1",
+      "scenario": "anchor-080-pct"
+    },
+    {
+      "cash_cents": "50000/1",
+      "default": true,
+      "equity_cents": "0/1",
+      "incoming_cents": "168000/1",
+      "node": "C",
+      "nominal_cents": "640000/1",
+      "outside_paid_cents": "43600/1",
+      "paid_cents": "218000/1",
+      "paid_usd_display": "2180.00",
+      "recovery_ratio": "109/320",
+      "residual_cents": "0/1",
+      "scenario": "anchor-080-pct"
+    },
+    {
+      "cash_cents": "50000/1",
+      "default": true,
+      "equity_cents": "0/1",
+      "incoming_cents": "174400/1",
+      "node": "D",
+      "nominal_cents": "500000/1",
+      "outside_paid_cents": "224400/1",
+      "paid_cents": "224400/1",
+      "paid_usd_display": "2244.00",
+      "recovery_ratio": "561/1250",
+      "residual_cents": "0/1",
+      "scenario": "anchor-080-pct"
+    },
+    {
+      "cash_cents": "300000/1",
+      "default": false,
+      "equity_cents": "170000/1",
+      "incoming_cents": "270000/1",
+      "node": "E",
+      "nominal_cents": "400000/1",
+      "outside_paid_cents": "100000/1",
+      "paid_cents": "400000/1",
+      "paid_usd_display": "4000.00",
+      "recovery_ratio": "1/1",
+      "residual_cents": "0/1",
+      "scenario": "anchor-080-pct"
+    },
+    {
+      "cash_cents": "150000/1",
+      "default": false,
+      "equity_cents": "200000/1",
+      "incoming_cents": "350000/1",
+      "node": "F",
+      "nominal_cents": "300000/1",
+      "outside_paid_cents": "80000/1",
+      "paid_cents": "300000/1",
+      "paid_usd_display": "3000.00",
+      "recovery_ratio": "1/1",
+      "residual_cents": "0/1",
+      "scenario": "anchor-080-pct"
+    },
+    {
+      "cash_cents": "250000/1",
+      "default": false,
+      "equity_cents": "0/1",
+      "incoming_cents": "0/1",
+      "node": "G",
+      "nominal_cents": "250000/1",
+      "outside_paid_cents": "50000/1",
+      "paid_cents": "250000/1",
+      "paid_usd_display": "2500.00",
+      "recovery_ratio": "1/1",
+      "residual_cents": "0/1",
+      "scenario": "anchor-080-pct"
+    },
+    {
+      "cash_cents": "100000/1",
+      "default": false,
+      "equity_cents": "100000/1",
+      "incoming_cents": "150000/1",
+      "node": "H",
+      "nominal_cents": "150000/1",
+      "outside_paid_cents": "100000/1",
+      "paid_cents": "150000/1",
+      "paid_usd_display": "1500.00",
+      "recovery_ratio": "1/1",
+      "residual_cents": "0/1",
+      "scenario": "anchor-080-pct"
+    },
+    {
+      "cash_cents": "100000/1",
+      "default": true,
+      "equity_cents": "0/1",
+      "incoming_cents": "0/1",
+      "node": "A",
+      "nominal_cents": "1000000/1",
+      "outside_paid_cents": "20000/1",
+      "paid_cents": "100000/1",
+      "paid_usd_display": "1000.00",
+      "recovery_ratio": "1/10",
+      "residual_cents": "0/1",
+      "scenario": "anchor-090-pct"
+    },
+    {
+      "cash_cents": "50000/1",
+      "default": true,
+      "equity_cents": "0/1",
+      "incoming_cents": "80000/1",
+      "node": "B",
+      "nominal_cents": "800000/1",
+      "outside_paid_cents": "26000/1",
+      "paid_cents": "130000/1",
+      "paid_usd_display": "1300.00",
+      "recovery_ratio": "13/80",
+      "residual_cents": "0/1",
+      "scenario": "anchor-090-pct"
+    },
+    {
+      "cash_cents": "50000/1",
+      "default": true,
+      "equity_cents": "0/1",
+      "incoming_cents": "104000/1",
+      "node": "C",
+      "nominal_cents": "640000/1",
+      "outside_paid_cents": "30800/1",
+      "paid_cents": "154000/1",
+      "paid_usd_display": "1540.00",
+      "recovery_ratio": "77/320",
+      "residual_cents": "0/1",
+      "scenario": "anchor-090-pct"
+    },
+    {
+      "cash_cents": "50000/1",
+      "default": true,
+      "equity_cents": "0/1",
+      "incoming_cents": "123200/1",
+      "node": "D",
+      "nominal_cents": "500000/1",
+      "outside_paid_cents": "173200/1",
+      "paid_cents": "173200/1",
+      "paid_usd_display": "1732.00",
+      "recovery_ratio": "433/1250",
+      "residual_cents": "0/1",
+      "scenario": "anchor-090-pct"
+    },
+    {
+      "cash_cents": "300000/1",
+      "default": false,
+      "equity_cents": "170000/1",
+      "incoming_cents": "270000/1",
+      "node": "E",
+      "nominal_cents": "400000/1",
+      "outside_paid_cents": "100000/1",
+      "paid_cents": "400000/1",
+      "paid_usd_display": "4000.00",
+      "recovery_ratio": "1/1",
+      "residual_cents": "0/1",
+      "scenario": "anchor-090-pct"
+    },
+    {
+      "cash_cents": "150000/1",
+      "default": false,
+      "equity_cents": "200000/1",
+      "incoming_cents": "350000/1",
+      "node": "F",
+      "nominal_cents": "300000/1",
+      "outside_paid_cents": "80000/1",
+      "paid_cents": "300000/1",
+      "paid_usd_display": "3000.00",
+      "recovery_ratio": "1/1",
+      "residual_cents": "0/1",
+      "scenario": "anchor-090-pct"
+    },
+    {
+      "cash_cents": "250000/1",
+      "default": false,
+      "equity_cents": "0/1",
+      "incoming_cents": "0/1",
+      "node": "G",
+      "nominal_cents": "250000/1",
+      "outside_paid_cents": "50000/1",
+      "paid_cents": "250000/1",
+      "paid_usd_display": "2500.00",
+      "recovery_ratio": "1/1",
+      "residual_cents": "0/1",
+      "scenario": "anchor-090-pct"
+    },
+    {
+      "cash_cents": "100000/1",
+      "default": false,
+      "equity_cents": "100000/1",
+      "incoming_cents": "150000/1",
+      "node": "H",
+      "nominal_cents": "150000/1",
+      "outside_paid_cents": "100000/1",
+      "paid_cents": "150000/1",
+      "paid_usd_display": "1500.00",
+      "recovery_ratio": "1/1",
+      "residual_cents": "0/1",
+      "scenario": "anchor-090-pct"
+    },
+    {
+      "cash_cents": "0/1",
+      "default": true,
+      "equity_cents": "0/1",
+      "incoming_cents": "0/1",
+      "node": "A",
+      "nominal_cents": "1000000/1",
+      "outside_paid_cents": "0/1",
+      "paid_cents": "0/1",
+      "paid_usd_display": "0.00",
+      "recovery_ratio": "0/1",
+      "residual_cents": "0/1",
+      "scenario": "anchor-100-pct"
+    },
+    {
+      "cash_cents": "50000/1",
+      "default": true,
+      "equity_cents": "0/1",
+      "incoming_cents": "0/1",
+      "node": "B",
+      "nominal_cents": "800000/1",
+      "outside_paid_cents": "10000/1",
+      "paid_cents": "50000/1",
+      "paid_usd_display": "500.00",
+      "recovery_ratio": "1/16",
+      "residual_cents": "0/1",
+      "scenario": "anchor-100-pct"
+    },
+    {
+      "cash_cents": "50000/1",
+      "default": true,
+      "equity_cents": "0/1",
+      "incoming_cents": "40000/1",
+      "node": "C",
+      "nominal_cents": "640000/1",
+      "outside_paid_cents": "18000/1",
+      "paid_cents": "90000/1",
+      "paid_usd_display": "900.00",
+      "recovery_ratio": "9/64",
+      "residual_cents": "0/1",
+      "scenario": "anchor-100-pct"
+    },
+    {
+      "cash_cents": "50000/1",
+      "default": true,
+      "equity_cents": "0/1",
+      "incoming_cents": "72000/1",
+      "node": "D",
+      "nominal_cents": "500000/1",
+      "outside_paid_cents": "122000/1",
+      "paid_cents": "122000/1",
+      "paid_usd_display": "1220.00",
+      "recovery_ratio": "61/250",
+      "residual_cents": "0/1",
+      "scenario": "anchor-100-pct"
+    },
+    {
+      "cash_cents": "300000/1",
+      "default": false,
+      "equity_cents": "170000/1",
+      "incoming_cents": "270000/1",
+      "node": "E",
+      "nominal_cents": "400000/1",
+      "outside_paid_cents": "100000/1",
+      "paid_cents": "400000/1",
+      "paid_usd_display": "4000.00",
+      "recovery_ratio": "1/1",
+      "residual_cents": "0/1",
+      "scenario": "anchor-100-pct"
+    },
+    {
+      "cash_cents": "150000/1",
+      "default": false,
+      "equity_cents": "200000/1",
+      "incoming_cents": "350000/1",
+      "node": "F",
+      "nominal_cents": "300000/1",
+      "outside_paid_cents": "80000/1",
+      "paid_cents": "300000/1",
+      "paid_usd_display": "3000.00",
+      "recovery_ratio": "1/1",
+      "residual_cents": "0/1",
+      "scenario": "anchor-100-pct"
+    },
+    {
+      "cash_cents": "250000/1",
+      "default": false,
+      "equity_cents": "0/1",
+      "incoming_cents": "0/1",
+      "node": "G",
+      "nominal_cents": "250000/1",
+      "outside_paid_cents": "50000/1",
+      "paid_cents": "250000/1",
+      "paid_usd_display": "2500.00",
+      "recovery_ratio": "1/1",
+      "residual_cents": "0/1",
+      "scenario": "anchor-100-pct"
+    },
+    {
+      "cash_cents": "100000/1",
+      "default": false,
+      "equity_cents": "100000/1",
+      "incoming_cents": "150000/1",
+      "node": "H",
+      "nominal_cents": "150000/1",
+      "outside_paid_cents": "100000/1",
+      "paid_cents": "150000/1",
+      "paid_usd_display": "1500.00",
+      "recovery_ratio": "1/1",
+      "residual_cents": "0/1",
+      "scenario": "anchor-100-pct"
+    },
+    {
+      "cash_cents": "500000/1",
+      "default": true,
+      "equity_cents": "0/1",
+      "incoming_cents": "0/1",
+      "node": "A",
+      "nominal_cents": "1000000/1",
+      "outside_paid_cents": "100000/1",
+      "paid_cents": "500000/1",
+      "paid_usd_display": "5000.00",
+      "recovery_ratio": "1/2",
+      "residual_cents": "0/1",
+      "scenario": "broad-050-pct"
+    },
+    {
+      "cash_cents": "25000/1",
+      "default": true,
+      "equity_cents": "0/1",
+      "incoming_cents": "400000/1",
+      "node": "B",
+      "nominal_cents": "800000/1",
+      "outside_paid_cents": "85000/1",
+      "paid_cents": "425000/1",
+      "paid_usd_display": "4250.00",
+      "recovery_ratio": "17/32",
+      "residual_cents": "0/1",
+      "scenario": "broad-050-pct"
+    },
+    {
+      "cash_cents": "25000/1",
+      "default": true,
+      "equity_cents": "0/1",
+      "incoming_cents": "340000/1",
+      "node": "C",
+      "nominal_cents": "640000/1",
+      "outside_paid_cents": "73000/1",
+      "paid_cents": "365000/1",
+      "paid_usd_display": "3650.00",
+      "recovery_ratio": "73/128",
+      "residual_cents": "0/1",
+      "scenario": "broad-050-pct"
+    },
+    {
+      "cash_cents": "25000/1",
+      "default": true,
+      "equity_cents": "0/1",
+      "incoming_cents": "292000/1",
+      "node": "D",
+      "nominal_cents": "500000/1",
+      "outside_paid_cents": "317000/1",
+      "paid_cents": "317000/1",
+      "paid_usd_display": "3170.00",
+      "recovery_ratio": "317/500",
+      "residual_cents": "0/1",
+      "scenario": "broad-050-pct"
+    },
+    {
+      "cash_cents": "150000/1",
+      "default": true,
+      "equity_cents": "0/1",
+      "incoming_cents": "245000/1",
+      "node": "E",
+      "nominal_cents": "400000/1",
+      "outside_paid_cents": "98750/1",
+      "paid_cents": "395000/1",
+      "paid_usd_display": "3950.00",
+      "recovery_ratio": "79/80",
+      "residual_cents": "0/1",
+      "scenario": "broad-050-pct"
+    },
+    {
+      "cash_cents": "75000/1",
+      "default": false,
+      "equity_cents": "338750/3",
+      "incoming_cents": "1013750/3",
+      "node": "F",
+      "nominal_cents": "300000/1",
+      "outside_paid_cents": "80000/1",
+      "paid_cents": "300000/1",
+      "paid_usd_display": "3000.00",
+      "recovery_ratio": "1/1",
+      "residual_cents": "0/1",
+      "scenario": "broad-050-pct"
+    },
+    {
+      "cash_cents": "125000/1",
+      "default": true,
+      "equity_cents": "0/1",
+      "incoming_cents": "0/1",
+      "node": "G",
+      "nominal_cents": "250000/1",
+      "outside_paid_cents": "25000/1",
+      "paid_cents": "125000/1",
+      "paid_usd_display": "1250.00",
+      "recovery_ratio": "1/2",
+      "residual_cents": "0/1",
+      "scenario": "broad-050-pct"
+    },
+    {
+      "cash_cents": "50000/1",
+      "default": true,
+      "equity_cents": "0/1",
+      "incoming_cents": "75000/1",
+      "node": "H",
+      "nominal_cents": "150000/1",
+      "outside_paid_cents": "250000/3",
+      "paid_cents": "125000/1",
+      "paid_usd_display": "1250.00",
+      "recovery_ratio": "5/6",
+      "residual_cents": "0/1",
+      "scenario": "broad-050-pct"
+    },
+    {
+      "cash_cents": "1000000/1",
+      "default": false,
+      "equity_cents": "0/1",
+      "incoming_cents": "0/1",
+      "node": "A",
+      "nominal_cents": "1000000/1",
+      "outside_paid_cents": "200000/1",
+      "paid_cents": "1000000/1",
+      "paid_usd_display": "10000.00",
+      "recovery_ratio": "1/1",
+      "residual_cents": "0/1",
+      "scenario": "cycle-090-pct"
+    },
+    {
+      "cash_cents": "50000/1",
+      "default": false,
+      "equity_cents": "50000/1",
+      "incoming_cents": "800000/1",
+      "node": "B",
+      "nominal_cents": "800000/1",
+      "outside_paid_cents": "160000/1",
+      "paid_cents": "800000/1",
+      "paid_usd_display": "8000.00",
+      "recovery_ratio": "1/1",
+      "residual_cents": "0/1",
+      "scenario": "cycle-090-pct"
+    },
+    {
+      "cash_cents": "50000/1",
+      "default": false,
+      "equity_cents": "50000/1",
+      "incoming_cents": "640000/1",
+      "node": "C",
+      "nominal_cents": "640000/1",
+      "outside_paid_cents": "128000/1",
+      "paid_cents": "640000/1",
+      "paid_usd_display": "6400.00",
+      "recovery_ratio": "1/1",
+      "residual_cents": "0/1",
+      "scenario": "cycle-090-pct"
+    },
+    {
+      "cash_cents": "50000/1",
+      "default": false,
+      "equity_cents": "62000/1",
+      "incoming_cents": "512000/1",
+      "node": "D",
+      "nominal_cents": "500000/1",
+      "outside_paid_cents": "500000/1",
+      "paid_cents": "500000/1",
+      "paid_usd_display": "5000.00",
+      "recovery_ratio": "1/1",
+      "residual_cents": "0/1",
+      "scenario": "cycle-090-pct"
+    },
+    {
+      "cash_cents": "30000/1",
+      "default": true,
+      "equity_cents": "0/1",
+      "incoming_cents": "6850000/27",
+      "node": "E",
+      "nominal_cents": "400000/1",
+      "outside_paid_cents": "1915000/27",
+      "paid_cents": "7660000/27",
+      "paid_usd_display": "2837.04",
+      "recovery_ratio": "383/540",
+      "residual_cents": "0/1",
+      "scenario": "cycle-090-pct"
+    },
+    {
+      "cash_cents": "15000/1",
+      "default": true,
+      "equity_cents": "0/1",
+      "incoming_cents": "2365000/9",
+      "node": "F",
+      "nominal_cents": "300000/1",
+      "outside_paid_cents": "2000000/27",
+      "paid_cents": "2500000/9",
+      "paid_usd_display": "2777.78",
+      "recovery_ratio": "25/27",
+      "residual_cents": "0/1",
+      "scenario": "cycle-090-pct"
+    },
+    {
+      "cash_cents": "250000/1",
+      "default": false,
+      "equity_cents": "0/1",
+      "incoming_cents": "0/1",
+      "node": "G",
+      "nominal_cents": "250000/1",
+      "outside_paid_cents": "50000/1",
+      "paid_cents": "250000/1",
+      "paid_usd_display": "2500.00",
+      "recovery_ratio": "1/1",
+      "residual_cents": "0/1",
+      "scenario": "cycle-090-pct"
+    },
+    {
+      "cash_cents": "100000/1",
+      "default": false,
+      "equity_cents": "100000/1",
+      "incoming_cents": "150000/1",
+      "node": "H",
+      "nominal_cents": "150000/1",
+      "outside_paid_cents": "100000/1",
+      "paid_cents": "150000/1",
+      "paid_usd_display": "1500.00",
+      "recovery_ratio": "1/1",
+      "residual_cents": "0/1",
+      "scenario": "cycle-090-pct"
+    },
+    {
+      "cash_cents": "700000/1",
+      "default": true,
+      "equity_cents": "0/1",
+      "incoming_cents": "0/1",
+      "node": "A",
+      "nominal_cents": "1000000/1",
+      "outside_paid_cents": "140000/1",
+      "paid_cents": "700000/1",
+      "paid_usd_display": "7000.00",
+      "recovery_ratio": "7/10",
+      "residual_cents": "0/1",
+      "scenario": "anchor-050-rescue-anchor"
+    },
+    {
+      "cash_cents": "50000/1",
+      "default": true,
+      "equity_cents": "0/1",
+      "incoming_cents": "560000/1",
+      "node": "B",
+      "nominal_cents": "800000/1",
+      "outside_paid_cents": "122000/1",
+      "paid_cents": "610000/1",
+      "paid_usd_display": "6100.00",
+      "recovery_ratio": "61/80",
+      "residual_cents": "0/1",
+      "scenario": "anchor-050-rescue-anchor"
+    },
+    {
+      "cash_cents": "50000/1",
+      "default": true,
+      "equity_cents": "0/1",
+      "incoming_cents": "488000/1",
+      "node": "C",
+      "nominal_cents": "640000/1",
+      "outside_paid_cents": "107600/1",
+      "paid_cents": "538000/1",
+      "paid_usd_display": "5380.00",
+      "recovery_ratio": "269/320",
+      "residual_cents": "0/1",
+      "scenario": "anchor-050-rescue-anchor"
+    },
+    {
+      "cash_cents": "50000/1",
+      "default": true,
+      "equity_cents": "0/1",
+      "incoming_cents": "430400/1",
+      "node": "D",
+      "nominal_cents": "500000/1",
+      "outside_paid_cents": "480400/1",
+      "paid_cents": "480400/1",
+      "paid_usd_display": "4804.00",
+      "recovery_ratio": "1201/1250",
+      "residual_cents": "0/1",
+      "scenario": "anchor-050-rescue-anchor"
+    },
+    {
+      "cash_cents": "300000/1",
+      "default": false,
+      "equity_cents": "170000/1",
+      "incoming_cents": "270000/1",
+      "node": "E",
+      "nominal_cents": "400000/1",
+      "outside_paid_cents": "100000/1",
+      "paid_cents": "400000/1",
+      "paid_usd_display": "4000.00",
+      "recovery_ratio": "1/1",
+      "residual_cents": "0/1",
+      "scenario": "anchor-050-rescue-anchor"
+    },
+    {
+      "cash_cents": "150000/1",
+      "default": false,
+      "equity_cents": "200000/1",
+      "incoming_cents": "350000/1",
+      "node": "F",
+      "nominal_cents": "300000/1",
+      "outside_paid_cents": "80000/1",
+      "paid_cents": "300000/1",
+      "paid_usd_display": "3000.00",
+      "recovery_ratio": "1/1",
+      "residual_cents": "0/1",
+      "scenario": "anchor-050-rescue-anchor"
+    },
+    {
+      "cash_cents": "250000/1",
+      "default": false,
+      "equity_cents": "0/1",
+      "incoming_cents": "0/1",
+      "node": "G",
+      "nominal_cents": "250000/1",
+      "outside_paid_cents": "50000/1",
+      "paid_cents": "250000/1",
+      "paid_usd_display": "2500.00",
+      "recovery_ratio": "1/1",
+      "residual_cents": "0/1",
+      "scenario": "anchor-050-rescue-anchor"
+    },
+    {
+      "cash_cents": "100000/1",
+      "default": false,
+      "equity_cents": "100000/1",
+      "incoming_cents": "150000/1",
+      "node": "H",
+      "nominal_cents": "150000/1",
+      "outside_paid_cents": "100000/1",
+      "paid_cents": "150000/1",
+      "paid_usd_display": "1500.00",
+      "recovery_ratio": "1/1",
+      "residual_cents": "0/1",
+      "scenario": "anchor-050-rescue-anchor"
+    },
+    {
+      "cash_cents": "525000/1",
+      "default": true,
+      "equity_cents": "0/1",
+      "incoming_cents": "0/1",
+      "node": "A",
+      "nominal_cents": "1000000/1",
+      "outside_paid_cents": "105000/1",
+      "paid_cents": "525000/1",
+      "paid_usd_display": "5250.00",
+      "recovery_ratio": "21/40",
+      "residual_cents": "0/1",
+      "scenario": "anchor-050-rescue-equal"
+    },
+    {
+      "cash_cents": "75000/1",
+      "default": true,
+      "equity_cents": "0/1",
+      "incoming_cents": "420000/1",
+      "node": "B",
+      "nominal_cents": "800000/1",
+      "outside_paid_cents": "99000/1",
+      "paid_cents": "495000/1",
+      "paid_usd_display": "4950.00",
+      "recovery_ratio": "99/160",
+      "residual_cents": "0/1",
+      "scenario": "anchor-050-rescue-equal"
+    },
+    {
+      "cash_cents": "75000/1",
+      "default": true,
+      "equity_cents": "0/1",
+      "incoming_cents": "396000/1",
+      "node": "C",
+      "nominal_cents": "640000/1",
+      "outside_paid_cents": "94200/1",
+      "paid_cents": "471000/1",
+      "paid_usd_display": "4710.00",
+      "recovery_ratio": "471/640",
+      "residual_cents": "0/1",
+      "scenario": "anchor-050-rescue-equal"
+    },
+    {
+      "cash_cents": "75000/1",
+      "default": true,
+      "equity_cents": "0/1",
+      "incoming_cents": "376800/1",
+      "node": "D",
+      "nominal_cents": "500000/1",
+      "outside_paid_cents": "451800/1",
+      "paid_cents": "451800/1",
+      "paid_usd_display": "4518.00",
+      "recovery_ratio": "2259/2500",
+      "residual_cents": "0/1",
+      "scenario": "anchor-050-rescue-equal"
+    },
+    {
+      "cash_cents": "325000/1",
+      "default": false,
+      "equity_cents": "195000/1",
+      "incoming_cents": "270000/1",
+      "node": "E",
+      "nominal_cents": "400000/1",
+      "outside_paid_cents": "100000/1",
+      "paid_cents": "400000/1",
+      "paid_usd_display": "4000.00",
+      "recovery_ratio": "1/1",
+      "residual_cents": "0/1",
+      "scenario": "anchor-050-rescue-equal"
+    },
+    {
+      "cash_cents": "175000/1",
+      "default": false,
+      "equity_cents": "225000/1",
+      "incoming_cents": "350000/1",
+      "node": "F",
+      "nominal_cents": "300000/1",
+      "outside_paid_cents": "80000/1",
+      "paid_cents": "300000/1",
+      "paid_usd_display": "3000.00",
+      "recovery_ratio": "1/1",
+      "residual_cents": "0/1",
+      "scenario": "anchor-050-rescue-equal"
+    },
+    {
+      "cash_cents": "275000/1",
+      "default": false,
+      "equity_cents": "25000/1",
+      "incoming_cents": "0/1",
+      "node": "G",
+      "nominal_cents": "250000/1",
+      "outside_paid_cents": "50000/1",
+      "paid_cents": "250000/1",
+      "paid_usd_display": "2500.00",
+      "recovery_ratio": "1/1",
+      "residual_cents": "0/1",
+      "scenario": "anchor-050-rescue-equal"
+    },
+    {
+      "cash_cents": "125000/1",
+      "default": false,
+      "equity_cents": "125000/1",
+      "incoming_cents": "150000/1",
+      "node": "H",
+      "nominal_cents": "150000/1",
+      "outside_paid_cents": "100000/1",
+      "paid_cents": "150000/1",
+      "paid_usd_display": "1500.00",
+      "recovery_ratio": "1/1",
+      "residual_cents": "0/1",
+      "scenario": "anchor-050-rescue-equal"
+    }
+  ],
+  "rounds": [
+    {
+      "default_ids": [
+        "A"
+      ],
+      "payments_cents": {
+        "A": "900000/1",
+        "B": "800000/1",
+        "C": "640000/1",
+        "D": "500000/1",
+        "E": "400000/1",
+        "F": "300000/1",
+        "G": "250000/1",
+        "H": "150000/1"
+      },
+      "scenario": "anchor-010-pct",
+      "step": 1
+    },
+    {
+      "default_ids": [
+        "A",
+        "B"
+      ],
+      "payments_cents": {
+        "A": "900000/1",
+        "B": "770000/1",
+        "C": "640000/1",
+        "D": "500000/1",
+        "E": "400000/1",
+        "F": "300000/1",
+        "G": "250000/1",
+        "H": "150000/1"
+      },
+      "scenario": "anchor-010-pct",
+      "step": 2
+    },
+    {
+      "default_ids": [
+        "A"
+      ],
+      "payments_cents": {
+        "A": "800000/1",
+        "B": "800000/1",
+        "C": "640000/1",
+        "D": "500000/1",
+        "E": "400000/1",
+        "F": "300000/1",
+        "G": "250000/1",
+        "H": "150000/1"
+      },
+      "scenario": "anchor-020-pct",
+      "step": 1
+    },
+    {
+      "default_ids": [
+        "A",
+        "B"
+      ],
+      "payments_cents": {
+        "A": "800000/1",
+        "B": "690000/1",
+        "C": "640000/1",
+        "D": "500000/1",
+        "E": "400000/1",
+        "F": "300000/1",
+        "G": "250000/1",
+        "H": "150000/1"
+      },
+      "scenario": "anchor-020-pct",
+      "step": 2
+    },
+    {
+      "default_ids": [
+        "A",
+        "B",
+        "C"
+      ],
+      "payments_cents": {
+        "A": "800000/1",
+        "B": "690000/1",
+        "C": "602000/1",
+        "D": "500000/1",
+        "E": "400000/1",
+        "F": "300000/1",
+        "G": "250000/1",
+        "H": "150000/1"
+      },
+      "scenario": "anchor-020-pct",
+      "step": 3
+    },
+    {
+      "default_ids": [
+        "A"
+      ],
+      "payments_cents": {
+        "A": "700000/1",
+        "B": "800000/1",
+        "C": "640000/1",
+        "D": "500000/1",
+        "E": "400000/1",
+        "F": "300000/1",
+        "G": "250000/1",
+        "H": "150000/1"
+      },
+      "scenario": "anchor-030-pct",
+      "step": 1
+    },
+    {
+      "default_ids": [
+        "A",
+        "B"
+      ],
+      "payments_cents": {
+        "A": "700000/1",
+        "B": "610000/1",
+        "C": "640000/1",
+        "D": "500000/1",
+        "E": "400000/1",
+        "F": "300000/1",
+        "G": "250000/1",
+        "H": "150000/1"
+      },
+      "scenario": "anchor-030-pct",
+      "step": 2
+    },
+    {
+      "default_ids": [
+        "A",
+        "B",
+        "C"
+      ],
+      "payments_cents": {
+        "A": "700000/1",
+        "B": "610000/1",
+        "C": "538000/1",
+        "D": "500000/1",
+        "E": "400000/1",
+        "F": "300000/1",
+        "G": "250000/1",
+        "H": "150000/1"
+      },
+      "scenario": "anchor-030-pct",
+      "step": 3
+    },
+    {
+      "default_ids": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "payments_cents": {
+        "A": "700000/1",
+        "B": "610000/1",
+        "C": "538000/1",
+        "D": "480400/1",
+        "E": "400000/1",
+        "F": "300000/1",
+        "G": "250000/1",
+        "H": "150000/1"
+      },
+      "scenario": "anchor-030-pct",
+      "step": 4
+    },
+    {
+      "default_ids": [
+        "A"
+      ],
+      "payments_cents": {
+        "A": "600000/1",
+        "B": "800000/1",
+        "C": "640000/1",
+        "D": "500000/1",
+        "E": "400000/1",
+        "F": "300000/1",
+        "G": "250000/1",
+        "H": "150000/1"
+      },
+      "scenario": "anchor-040-pct",
+      "step": 1
+    },
+    {
+      "default_ids": [
+        "A",
+        "B"
+      ],
+      "payments_cents": {
+        "A": "600000/1",
+        "B": "530000/1",
+        "C": "640000/1",
+        "D": "500000/1",
+        "E": "400000/1",
+        "F": "300000/1",
+        "G": "250000/1",
+        "H": "150000/1"
+      },
+      "scenario": "anchor-040-pct",
+      "step": 2
+    },
+    {
+      "default_ids": [
+        "A",
+        "B",
+        "C"
+      ],
+      "payments_cents": {
+        "A": "600000/1",
+        "B": "530000/1",
+        "C": "474000/1",
+        "D": "500000/1",
+        "E": "400000/1",
+        "F": "300000/1",
+        "G": "250000/1",
+        "H": "150000/1"
+      },
+      "scenario": "anchor-040-pct",
+      "step": 3
+    },
+    {
+      "default_ids": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "payments_cents": {
+        "A": "600000/1",
+        "B": "530000/1",
+        "C": "474000/1",
+        "D": "429200/1",
+        "E": "400000/1",
+        "F": "300000/1",
+        "G": "250000/1",
+        "H": "150000/1"
+      },
+      "scenario": "anchor-040-pct",
+      "step": 4
+    },
+    {
+      "default_ids": [
+        "A"
+      ],
+      "payments_cents": {
+        "A": "500000/1",
+        "B": "800000/1",
+        "C": "640000/1",
+        "D": "500000/1",
+        "E": "400000/1",
+        "F": "300000/1",
+        "G": "250000/1",
+        "H": "150000/1"
+      },
+      "scenario": "anchor-050-pct",
+      "step": 1
+    },
+    {
+      "default_ids": [
+        "A",
+        "B"
+      ],
+      "payments_cents": {
+        "A": "500000/1",
+        "B": "450000/1",
+        "C": "640000/1",
+        "D": "500000/1",
+        "E": "400000/1",
+        "F": "300000/1",
+        "G": "250000/1",
+        "H": "150000/1"
+      },
+      "scenario": "anchor-050-pct",
+      "step": 2
+    },
+    {
+      "default_ids": [
+        "A",
+        "B",
+        "C"
+      ],
+      "payments_cents": {
+        "A": "500000/1",
+        "B": "450000/1",
+        "C": "410000/1",
+        "D": "500000/1",
+        "E": "400000/1",
+        "F": "300000/1",
+        "G": "250000/1",
+        "H": "150000/1"
+      },
+      "scenario": "anchor-050-pct",
+      "step": 3
+    },
+    {
+      "default_ids": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "payments_cents": {
+        "A": "500000/1",
+        "B": "450000/1",
+        "C": "410000/1",
+        "D": "378000/1",
+        "E": "400000/1",
+        "F": "300000/1",
+        "G": "250000/1",
+        "H": "150000/1"
+      },
+      "scenario": "anchor-050-pct",
+      "step": 4
+    },
+    {
+      "default_ids": [
+        "A"
+      ],
+      "payments_cents": {
+        "A": "400000/1",
+        "B": "800000/1",
+        "C": "640000/1",
+        "D": "500000/1",
+        "E": "400000/1",
+        "F": "300000/1",
+        "G": "250000/1",
+        "H": "150000/1"
+      },
+      "scenario": "anchor-060-pct",
+      "step": 1
+    },
+    {
+      "default_ids": [
+        "A",
+        "B"
+      ],
+      "payments_cents": {
+        "A": "400000/1",
+        "B": "370000/1",
+        "C": "640000/1",
+        "D": "500000/1",
+        "E": "400000/1",
+        "F": "300000/1",
+        "G": "250000/1",
+        "H": "150000/1"
+      },
+      "scenario": "anchor-060-pct",
+      "step": 2
+    },
+    {
+      "default_ids": [
+        "A",
+        "B",
+        "C"
+      ],
+      "payments_cents": {
+        "A": "400000/1",
+        "B": "370000/1",
+        "C": "346000/1",
+        "D": "500000/1",
+        "E": "400000/1",
+        "F": "300000/1",
+        "G": "250000/1",
+        "H": "150000/1"
+      },
+      "scenario": "anchor-060-pct",
+      "step": 3
+    },
+    {
+      "default_ids": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "payments_cents": {
+        "A": "400000/1",
+        "B": "370000/1",
+        "C": "346000/1",
+        "D": "326800/1",
+        "E": "400000/1",
+        "F": "300000/1",
+        "G": "250000/1",
+        "H": "150000/1"
+      },
+      "scenario": "anchor-060-pct",
+      "step": 4
+    },
+    {
+      "default_ids": [
+        "A"
+      ],
+      "payments_cents": {
+        "A": "300000/1",
+        "B": "800000/1",
+        "C": "640000/1",
+        "D": "500000/1",
+        "E": "400000/1",
+        "F": "300000/1",
+        "G": "250000/1",
+        "H": "150000/1"
+      },
+      "scenario": "anchor-070-pct",
+      "step": 1
+    },
+    {
+      "default_ids": [
+        "A",
+        "B"
+      ],
+      "payments_cents": {
+        "A": "300000/1",
+        "B": "290000/1",
+        "C": "640000/1",
+        "D": "500000/1",
+        "E": "400000/1",
+        "F": "300000/1",
+        "G": "250000/1",
+        "H": "150000/1"
+      },
+      "scenario": "anchor-070-pct",
+      "step": 2
+    },
+    {
+      "default_ids": [
+        "A",
+        "B",
+        "C"
+      ],
+      "payments_cents": {
+        "A": "300000/1",
+        "B": "290000/1",
+        "C": "282000/1",
+        "D": "500000/1",
+        "E": "400000/1",
+        "F": "300000/1",
+        "G": "250000/1",
+        "H": "150000/1"
+      },
+      "scenario": "anchor-070-pct",
+      "step": 3
+    },
+    {
+      "default_ids": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "payments_cents": {
+        "A": "300000/1",
+        "B": "290000/1",
+        "C": "282000/1",
+        "D": "275600/1",
+        "E": "400000/1",
+        "F": "300000/1",
+        "G": "250000/1",
+        "H": "150000/1"
+      },
+      "scenario": "anchor-070-pct",
+      "step": 4
+    },
+    {
+      "default_ids": [
+        "A"
+      ],
+      "payments_cents": {
+        "A": "200000/1",
+        "B": "800000/1",
+        "C": "640000/1",
+        "D": "500000/1",
+        "E": "400000/1",
+        "F": "300000/1",
+        "G": "250000/1",
+        "H": "150000/1"
+      },
+      "scenario": "anchor-080-pct",
+      "step": 1
+    },
+    {
+      "default_ids": [
+        "A",
+        "B"
+      ],
+      "payments_cents": {
+        "A": "200000/1",
+        "B": "210000/1",
+        "C": "640000/1",
+        "D": "500000/1",
+        "E": "400000/1",
+        "F": "300000/1",
+        "G": "250000/1",
+        "H": "150000/1"
+      },
+      "scenario": "anchor-080-pct",
+      "step": 2
+    },
+    {
+      "default_ids": [
+        "A",
+        "B",
+        "C"
+      ],
+      "payments_cents": {
+        "A": "200000/1",
+        "B": "210000/1",
+        "C": "218000/1",
+        "D": "500000/1",
+        "E": "400000/1",
+        "F": "300000/1",
+        "G": "250000/1",
+        "H": "150000/1"
+      },
+      "scenario": "anchor-080-pct",
+      "step": 3
+    },
+    {
+      "default_ids": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "payments_cents": {
+        "A": "200000/1",
+        "B": "210000/1",
+        "C": "218000/1",
+        "D": "224400/1",
+        "E": "400000/1",
+        "F": "300000/1",
+        "G": "250000/1",
+        "H": "150000/1"
+      },
+      "scenario": "anchor-080-pct",
+      "step": 4
+    },
+    {
+      "default_ids": [
+        "A"
+      ],
+      "payments_cents": {
+        "A": "100000/1",
+        "B": "800000/1",
+        "C": "640000/1",
+        "D": "500000/1",
+        "E": "400000/1",
+        "F": "300000/1",
+        "G": "250000/1",
+        "H": "150000/1"
+      },
+      "scenario": "anchor-090-pct",
+      "step": 1
+    },
+    {
+      "default_ids": [
+        "A",
+        "B"
+      ],
+      "payments_cents": {
+        "A": "100000/1",
+        "B": "130000/1",
+        "C": "640000/1",
+        "D": "500000/1",
+        "E": "400000/1",
+        "F": "300000/1",
+        "G": "250000/1",
+        "H": "150000/1"
+      },
+      "scenario": "anchor-090-pct",
+      "step": 2
+    },
+    {
+      "default_ids": [
+        "A",
+        "B",
+        "C"
+      ],
+      "payments_cents": {
+        "A": "100000/1",
+        "B": "130000/1",
+        "C": "154000/1",
+        "D": "500000/1",
+        "E": "400000/1",
+        "F": "300000/1",
+        "G": "250000/1",
+        "H": "150000/1"
+      },
+      "scenario": "anchor-090-pct",
+      "step": 3
+    },
+    {
+      "default_ids": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "payments_cents": {
+        "A": "100000/1",
+        "B": "130000/1",
+        "C": "154000/1",
+        "D": "173200/1",
+        "E": "400000/1",
+        "F": "300000/1",
+        "G": "250000/1",
+        "H": "150000/1"
+      },
+      "scenario": "anchor-090-pct",
+      "step": 4
+    },
+    {
+      "default_ids": [
+        "A"
+      ],
+      "payments_cents": {
+        "A": "0/1",
+        "B": "800000/1",
+        "C": "640000/1",
+        "D": "500000/1",
+        "E": "400000/1",
+        "F": "300000/1",
+        "G": "250000/1",
+        "H": "150000/1"
+      },
+      "scenario": "anchor-100-pct",
+      "step": 1
+    },
+    {
+      "default_ids": [
+        "A",
+        "B"
+      ],
+      "payments_cents": {
+        "A": "0/1",
+        "B": "50000/1",
+        "C": "640000/1",
+        "D": "500000/1",
+        "E": "400000/1",
+        "F": "300000/1",
+        "G": "250000/1",
+        "H": "150000/1"
+      },
+      "scenario": "anchor-100-pct",
+      "step": 2
+    },
+    {
+      "default_ids": [
+        "A",
+        "B",
+        "C"
+      ],
+      "payments_cents": {
+        "A": "0/1",
+        "B": "50000/1",
+        "C": "90000/1",
+        "D": "500000/1",
+        "E": "400000/1",
+        "F": "300000/1",
+        "G": "250000/1",
+        "H": "150000/1"
+      },
+      "scenario": "anchor-100-pct",
+      "step": 3
+    },
+    {
+      "default_ids": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "payments_cents": {
+        "A": "0/1",
+        "B": "50000/1",
+        "C": "90000/1",
+        "D": "122000/1",
+        "E": "400000/1",
+        "F": "300000/1",
+        "G": "250000/1",
+        "H": "150000/1"
+      },
+      "scenario": "anchor-100-pct",
+      "step": 4
+    },
+    {
+      "default_ids": [
+        "A",
+        "G"
+      ],
+      "payments_cents": {
+        "A": "500000/1",
+        "B": "800000/1",
+        "C": "640000/1",
+        "D": "500000/1",
+        "E": "400000/1",
+        "F": "300000/1",
+        "G": "125000/1",
+        "H": "150000/1"
+      },
+      "scenario": "broad-050-pct",
+      "step": 1
+    },
+    {
+      "default_ids": [
+        "A",
+        "B",
+        "E",
+        "G",
+        "H"
+      ],
+      "payments_cents": {
+        "A": "500000/1",
+        "B": "425000/1",
+        "C": "640000/1",
+        "D": "500000/1",
+        "E": "395000/1",
+        "F": "300000/1",
+        "G": "125000/1",
+        "H": "125000/1"
+      },
+      "scenario": "broad-050-pct",
+      "step": 2
+    },
+    {
+      "default_ids": [
+        "A",
+        "B",
+        "C",
+        "E",
+        "G",
+        "H"
+      ],
+      "payments_cents": {
+        "A": "500000/1",
+        "B": "425000/1",
+        "C": "365000/1",
+        "D": "500000/1",
+        "E": "395000/1",
+        "F": "300000/1",
+        "G": "125000/1",
+        "H": "125000/1"
+      },
+      "scenario": "broad-050-pct",
+      "step": 3
+    },
+    {
+      "default_ids": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "G",
+        "H"
+      ],
+      "payments_cents": {
+        "A": "500000/1",
+        "B": "425000/1",
+        "C": "365000/1",
+        "D": "317000/1",
+        "E": "395000/1",
+        "F": "300000/1",
+        "G": "125000/1",
+        "H": "125000/1"
+      },
+      "scenario": "broad-050-pct",
+      "step": 4
+    },
+    {
+      "default_ids": [
+        "E"
+      ],
+      "payments_cents": {
+        "A": "1000000/1",
+        "B": "800000/1",
+        "C": "640000/1",
+        "D": "500000/1",
+        "E": "300000/1",
+        "F": "300000/1",
+        "G": "250000/1",
+        "H": "150000/1"
+      },
+      "scenario": "cycle-090-pct",
+      "step": 1
+    },
+    {
+      "default_ids": [
+        "E",
+        "F"
+      ],
+      "payments_cents": {
+        "A": "1000000/1",
+        "B": "800000/1",
+        "C": "640000/1",
+        "D": "500000/1",
+        "E": "7660000/27",
+        "F": "2500000/9",
+        "G": "250000/1",
+        "H": "150000/1"
+      },
+      "scenario": "cycle-090-pct",
+      "step": 2
+    },
+    {
+      "default_ids": [
+        "A"
+      ],
+      "payments_cents": {
+        "A": "700000/1",
+        "B": "800000/1",
+        "C": "640000/1",
+        "D": "500000/1",
+        "E": "400000/1",
+        "F": "300000/1",
+        "G": "250000/1",
+        "H": "150000/1"
+      },
+      "scenario": "anchor-050-rescue-anchor",
+      "step": 1
+    },
+    {
+      "default_ids": [
+        "A",
+        "B"
+      ],
+      "payments_cents": {
+        "A": "700000/1",
+        "B": "610000/1",
+        "C": "640000/1",
+        "D": "500000/1",
+        "E": "400000/1",
+        "F": "300000/1",
+        "G": "250000/1",
+        "H": "150000/1"
+      },
+      "scenario": "anchor-050-rescue-anchor",
+      "step": 2
+    },
+    {
+      "default_ids": [
+        "A",
+        "B",
+        "C"
+      ],
+      "payments_cents": {
+        "A": "700000/1",
+        "B": "610000/1",
+        "C": "538000/1",
+        "D": "500000/1",
+        "E": "400000/1",
+        "F": "300000/1",
+        "G": "250000/1",
+        "H": "150000/1"
+      },
+      "scenario": "anchor-050-rescue-anchor",
+      "step": 3
+    },
+    {
+      "default_ids": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "payments_cents": {
+        "A": "700000/1",
+        "B": "610000/1",
+        "C": "538000/1",
+        "D": "480400/1",
+        "E": "400000/1",
+        "F": "300000/1",
+        "G": "250000/1",
+        "H": "150000/1"
+      },
+      "scenario": "anchor-050-rescue-anchor",
+      "step": 4
+    },
+    {
+      "default_ids": [
+        "A"
+      ],
+      "payments_cents": {
+        "A": "525000/1",
+        "B": "800000/1",
+        "C": "640000/1",
+        "D": "500000/1",
+        "E": "400000/1",
+        "F": "300000/1",
+        "G": "250000/1",
+        "H": "150000/1"
+      },
+      "scenario": "anchor-050-rescue-equal",
+      "step": 1
+    },
+    {
+      "default_ids": [
+        "A",
+        "B"
+      ],
+      "payments_cents": {
+        "A": "525000/1",
+        "B": "495000/1",
+        "C": "640000/1",
+        "D": "500000/1",
+        "E": "400000/1",
+        "F": "300000/1",
+        "G": "250000/1",
+        "H": "150000/1"
+      },
+      "scenario": "anchor-050-rescue-equal",
+      "step": 2
+    },
+    {
+      "default_ids": [
+        "A",
+        "B",
+        "C"
+      ],
+      "payments_cents": {
+        "A": "525000/1",
+        "B": "495000/1",
+        "C": "471000/1",
+        "D": "500000/1",
+        "E": "400000/1",
+        "F": "300000/1",
+        "G": "250000/1",
+        "H": "150000/1"
+      },
+      "scenario": "anchor-050-rescue-equal",
+      "step": 3
+    },
+    {
+      "default_ids": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "payments_cents": {
+        "A": "525000/1",
+        "B": "495000/1",
+        "C": "471000/1",
+        "D": "451800/1",
+        "E": "400000/1",
+        "F": "300000/1",
+        "G": "250000/1",
+        "H": "150000/1"
+      },
+      "scenario": "anchor-050-rescue-equal",
+      "step": 4
+    }
+  ],
+  "schema_version": 1
+}
