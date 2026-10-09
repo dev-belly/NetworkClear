@@ -4,11 +4,50 @@ import io
 import tempfile
 import unittest
 from fractions import Fraction
+from html.parser import HTMLParser
 from pathlib import Path
 
 from networkclear.cli import demo_inputs, main
 from networkclear.contracts import ContractError, canonical, digest, read_json
 from networkclear.report import FILES, analyze, build, verify, write_report
+
+
+class LiabilityMatrix(HTMLParser):
+    """Read displayed matrix cells independently of report formatting helpers."""
+
+    def __init__(self):
+        super().__init__()
+        self.depth = 0
+        self.rows = []
+        self.row = None
+        self.cell = None
+
+    def handle_starttag(self, tag, attrs):
+        if tag == "div":
+            if self.depth:
+                self.depth += 1
+            elif dict(attrs).get("class") == "matrix":
+                self.depth = 1
+        if self.depth:
+            if tag == "tr":
+                self.row = []
+            elif tag in {"th", "td"}:
+                self.cell = []
+
+    def handle_data(self, data):
+        if self.cell is not None:
+            self.cell.append(data)
+
+    def handle_endtag(self, tag):
+        if self.depth:
+            if tag in {"th", "td"}:
+                self.row.append("".join(self.cell))
+                self.cell = None
+            elif tag == "tr":
+                self.rows.append(self.row)
+                self.row = None
+            elif tag == "div":
+                self.depth -= 1
 
 
 class ReportTests(unittest.TestCase):
@@ -133,6 +172,35 @@ class ReportTests(unittest.TestCase):
         shuffled["edges"].reverse()
         self.assertEqual(analyze(self.data, self.scenarios), analyze(shuffled, self.scenarios))
         self.assertEqual(read_json((self.target / "network.json").read_bytes()), self.data)
+
+    def test_liability_matrix_preserves_nominal_cents(self):
+        for cents, expected_usd in [
+            (1, "0.01"),
+            (49, "0.49"),
+            (50, "0.50"),
+            (99, "0.99"),
+            (101, "1.01"),
+            (12345, "123.45"),
+        ]:
+            with self.subTest(cents=cents):
+                data = {
+                    "schema_version": 1,
+                    "currency": "USD",
+                    "nodes": [
+                        {"id": "A", "cash_cents": 20000, "outside_debt_cents": 3},
+                        {"id": "B", "cash_cents": 0, "outside_debt_cents": 7},
+                    ],
+                    "edges": [{"debtor": "A", "creditor": "B", "amount_cents": cents}],
+                }
+                scenarios = [{"id": "baseline", "reductions_bps": {}, "injections_cents": {}}]
+                files = build(data, scenarios)
+                matrix = LiabilityMatrix()
+                matrix.feed(files["index.html"].decode())
+                self.assertEqual(matrix.rows[0], ["Debtor ↓ / Creditor →", "A", "B", "OUTSIDE"])
+                self.assertEqual(matrix.rows[1][2], expected_usd)
+                self.assertEqual(matrix.rows[1], ["A", "0.00", expected_usd, "0.03"])
+                self.assertEqual(matrix.rows[2], ["B", "0.00", "0.00", "0.07"])
+                self.assertIn(f"baseline,A,B,{cents}/1,", files["flows.csv"].decode())
 
 
 if __name__ == "__main__":

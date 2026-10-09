@@ -28,6 +28,8 @@ Scenarios are an array of objects such as `{ "id": "shock", "reductions_bps": {"
 
 Shocks are integer basis points in `[0,10000]`; injections apply after asset reductions and debts remain fixed. All outputs preserve exact rational cents, even when the model produces fractions of a cent. Decimal display uses isolated half-even rounding.
 
+The nominal liability matrix displays USD with two decimal places, including outside debt and zero cells. A one-cent debt appears as `0.01`, matching the exact nominal cents in `flows.csv`; nominal inputs are integral cents and have no rounding loss in this view. Cleared payments can still be fractional cents, so their exact fractions remain authoritative.
+
 ## Losses and verification
 
 Gross unpaid debt sums all `b-p`, including internal exposures. Outside shortfall sums unpaid outside debt only. Network accounting cancels internal transfers, giving **external assets = outside payments + equity**. Direct defaults cannot pay even assuming full nominal counterparty payments; cascade defaults are additional final defaults. This is a model diagnostic, not empirical causal identification.
