@@ -97,32 +97,36 @@ class ReportTests(unittest.TestCase):
 
     def test_tampered_payment_and_rehashed_manifest_fail(self):
         path = self.target / "payments.csv"
-        path.write_text(path.read_text(encoding="utf-8") + "fake,row\n", encoding="utf-8")
+        path.write_text(path.read_text(encoding="utf-8") + "fake,row\n", encoding="utf-8", newline="")
         self.rehash()
         with self.assertRaisesRegex(ContractError, "Semantic replay"):
             verify(self.target)
 
     def test_tampered_flow_and_rehashed_manifest_fail(self):
         path = self.target / "flows.csv"
-        path.write_text(path.read_text(encoding="utf-8").replace("OUTSIDE", "FAKE_CREDITOR"), encoding="utf-8")
+        path.write_text(
+            path.read_text(encoding="utf-8").replace("OUTSIDE", "FAKE_CREDITOR"), encoding="utf-8", newline=""
+        )
         self.rehash()
         with self.assertRaisesRegex(ContractError, "Semantic replay"):
             verify(self.target)
 
     def test_tampered_html_and_rehashed_manifest_fail(self):
         path = self.target / "index.html"
-        path.write_text(path.read_text(encoding="utf-8") + "<p>Fabricated bank rating</p>", encoding="utf-8")
+        path.write_text(
+            path.read_text(encoding="utf-8") + "<p>Fabricated bank rating</p>", encoding="utf-8", newline=""
+        )
         self.rehash()
         with self.assertRaisesRegex(ContractError, "Semantic replay"):
             verify(self.target)
 
     def test_extra_member_fails(self):
-        (self.target / "extra.txt").write_text("extra", encoding="utf-8")
+        (self.target / "extra.txt").write_text("extra", encoding="utf-8", newline="")
         with self.assertRaisesRegex(ContractError, "file set"):
             verify(self.target)
 
     def test_manifest_mismatch_fails(self):
-        (self.target / "analysis.json").write_text("{}", encoding="utf-8")
+        (self.target / "analysis.json").write_text("{}", encoding="utf-8", newline="")
         with self.assertRaisesRegex(ContractError, "manifest"):
             verify(self.target)
 
