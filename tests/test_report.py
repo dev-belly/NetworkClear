@@ -97,40 +97,52 @@ class ReportTests(unittest.TestCase):
 
     def test_tampered_payment_and_rehashed_manifest_fail(self):
         path = self.target / "payments.csv"
-        path.write_text(path.read_text() + "fake,row\n")
+        path.write_text(path.read_text(encoding="utf-8") + "fake,row\n", encoding="utf-8", newline="")
         self.rehash()
         with self.assertRaisesRegex(ContractError, "Semantic replay"):
             verify(self.target)
 
     def test_tampered_flow_and_rehashed_manifest_fail(self):
         path = self.target / "flows.csv"
-        path.write_text(path.read_text().replace("OUTSIDE", "FAKE_CREDITOR"))
+        path.write_text(
+            path.read_text(encoding="utf-8").replace("OUTSIDE", "FAKE_CREDITOR"), encoding="utf-8", newline=""
+        )
         self.rehash()
         with self.assertRaisesRegex(ContractError, "Semantic replay"):
             verify(self.target)
 
     def test_tampered_html_and_rehashed_manifest_fail(self):
         path = self.target / "index.html"
-        path.write_text(path.read_text() + "<p>Fabricated bank rating</p>")
+        path.write_text(
+            path.read_text(encoding="utf-8") + "<p>Fabricated bank rating</p>", encoding="utf-8", newline=""
+        )
         self.rehash()
         with self.assertRaisesRegex(ContractError, "Semantic replay"):
             verify(self.target)
 
-    def test_manifest_mismatch_and_extra_member_fail(self):
-        (self.target / "extra.txt").write_text("extra")
+    def test_extra_member_fails(self):
+        (self.target / "extra.txt").write_text("extra", encoding="utf-8", newline="")
         with self.assertRaisesRegex(ContractError, "file set"):
             verify(self.target)
-        (self.target / "extra.txt").unlink()
-        (self.target / "analysis.json").write_text("{}")
+
+    def test_manifest_mismatch_fails(self):
+        (self.target / "analysis.json").write_text("{}", encoding="utf-8", newline="")
         with self.assertRaisesRegex(ContractError, "manifest"):
             verify(self.target)
 
-    def test_symlink_and_nonempty_output_fail(self):
+    def test_nonempty_output_fails(self):
         with self.assertRaisesRegex(ContractError, "empty"):
             write_report(self.data, self.scenarios, self.target)
+
+    def test_symlink_member_fails(self):
         path = self.target / "payments.csv"
         path.unlink()
-        path.symlink_to(self.target / "flows.csv")
+        try:
+            path.symlink_to(self.target / "flows.csv")
+        except OSError as exc:
+            if getattr(exc, "winerror", None) == 1314:
+                self.skipTest("Windows does not grant permission to create symbolic links")
+            raise
         with self.assertRaisesRegex(ContractError, "symlinks"):
             verify(self.target)
 
