@@ -48,10 +48,66 @@ jobs:
           name: demo-python-${{ matrix.python }}
           path: examples/demo
 
+  windows:
+    name: Windows Python 3.12
+    runs-on: windows-latest
+    defaults:
+      run:
+        shell: pwsh
+    steps:
+      - name: Enable Windows checkout conversion
+        run: git config --global core.autocrlf true
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: "3.12"
+      - name: Install
+        run: python -m pip install -e '.[dev]'
+      - name: Style
+        run: |
+          ruff check src tests scripts
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+          ruff format --check src tests scripts
+      - name: Unit and integration contracts
+        env:
+          PYTHONUTF8: "0"
+        run: python -m unittest discover -s tests -v
+      - name: Replay committed evidence
+        run: |
+          python scripts/check_demo.py
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+          networkclear verify examples/demo
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+          python scripts/generate_preview.py --check
+      - name: Installed wheel outside checkout
+        run: |
+          $wheelhouse = Join-Path $env:RUNNER_TEMP 'networkclear-wheelhouse'
+          $wheelEnv = Join-Path $env:RUNNER_TEMP 'networkclear-wheel'
+          $wheelDemo = Join-Path $env:RUNNER_TEMP 'networkclear-wheel-demo'
+          python -m pip wheel . --no-deps --wheel-dir $wheelhouse
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+          python -m venv $wheelEnv
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+          $wheelPython = Join-Path $wheelEnv 'Scripts/python.exe'
+          $wheelCli = Join-Path $wheelEnv 'Scripts/networkclear.exe'
+          $wheels = @(Get-ChildItem -LiteralPath $wheelhouse -Filter '*.whl')
+          if ($wheels.Count -ne 1) { throw 'Expected exactly one wheel' }
+          & $wheelPython -m pip install --no-deps $wheels[0].FullName
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+          Push-Location $env:RUNNER_TEMP
+          try {
+            & $wheelCli demo --out $wheelDemo
+            if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+            & $wheelCli verify $wheelDemo
+            if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+          } finally {
+            Pop-Location
+          }
+
   deploy:
     name: Deploy verified demo
     if: github.event_name == 'push' && github.ref == 'refs/heads/main'
-    needs: test
+    needs: [test, windows]
     runs-on: ubuntu-latest
     permissions:
       contents: read

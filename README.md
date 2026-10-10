@@ -14,15 +14,29 @@ If an institution loses external assets, which debts remain unpaid after the net
 
 ## Quick start
 
+On macOS or Linux:
+
 ```bash
 git clone https://github.com/dev-belly/NetworkClear.git
 cd NetworkClear
 python -m venv .venv
-source .venv/bin/activate  # Windows: .venv\Scripts\activate
+source .venv/bin/activate
 python -m pip install -e .
 networkclear demo --out output/demo
 networkclear verify output/demo
 python -m http.server 8000 --directory output/demo
+```
+
+On Windows, use PowerShell. These commands do not require activating the environment:
+
+```powershell
+git clone https://github.com/dev-belly/NetworkClear.git
+cd NetworkClear
+python -m venv .venv
+.\.venv\Scripts\python.exe -m pip install -e .
+.\.venv\Scripts\networkclear.exe demo --out output/demo
+.\.venv\Scripts\networkclear.exe verify output/demo
+.\.venv\Scripts\python.exe -m http.server 8000 --directory output/demo
 ```
 
 Open `http://localhost:8000` to switch stress scenarios, inspect recoveries and view the liability matrix. Saved evidence is in [examples/demo](examples/demo); download or serve the HTML locally.
@@ -68,7 +82,7 @@ ruff format --check src tests scripts
 networkclear verify examples/demo
 ```
 
-No runtime dependencies, credentials or downloads are needed. CI runs tests, committed report replay and installed-wheel smoke tests on Python 3.11–3.13. The verifier rejects rehashed output tampering; it does not authenticate inputs or detect a complete coordinated rewrite.
+No runtime dependencies, credentials or downloads are needed. CI runs tests, committed report replay and installed-wheel smoke tests on Linux with Python 3.11–3.13 and Windows with Python 3.12. Text files retain LF endings even when Git's `core.autocrlf` is enabled, preserving report hashes and preview bytes. The verifier rejects rehashed output tampering; it does not authenticate inputs or detect a complete coordinated rewrite.
 
 ## 中文说明
 
