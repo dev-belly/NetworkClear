@@ -1,6 +1,7 @@
 """Stress scenario evidence, CSV flows, interactive HTML and independent replay."""
 
 import html
+import json
 from fractions import Fraction
 from pathlib import Path
 
@@ -139,10 +140,14 @@ def analyze(data, scenarios):
 
 def render(analysis):
     esc = html.escape
+
+    def identity(value):
+        return esc(json.dumps(value, ensure_ascii=True), quote=True)
+
     options, panels = [], []
     for case in analysis["cases"]:
         name = case["scenario"]
-        options.append(f"<option value='{esc(name, quote=True)}'>{esc(name)}</option>")
+        options.append(f"<option value='{identity(name)}'>{esc(name)}</option>")
         rows = []
         for payment in analysis["payments"]:
             if payment["scenario"] == name:
@@ -157,7 +162,7 @@ def render(analysis):
         default_ids = ", ".join(case["default_ids"]) or "none"
         cascade_ids = ", ".join(case["cascade_default_ids"]) or "none"
         panels.append(
-            f"<section data-case='{esc(name, quote=True)}'><h2>{esc(name)}</h2>"
+            f"<section data-case='{identity(name)}'><h2>{esc(name)}</h2>"
             "<div class='cards'>"
             f"<div><strong>{case['default_count']}</strong><span>Defaulting institutions</span></div>"
             f"<div><strong>{case['cascade_count']}</strong><span>Additional cascade defaults</span></div>"
@@ -247,10 +252,26 @@ def csv_bytes(rows, fields):
     import io
 
     stream = io.StringIO(newline="")
-    writer = csv.DictWriter(stream, fieldnames=fields, lineterminator="\n")
-    writer.writeheader()
-    writer.writerows(rows)
-    return stream.getvalue().encode()
+    # Quote embedded CR as well as LF, while retaining LF record endings.
+    writer = csv.DictWriter(stream, fieldnames=fields, lineterminator="\r\n")
+
+    def record(row):
+        stream.seek(0)
+        stream.truncate(0)
+        writer.writerow({key: csv_label(value) if key == "scenario" else value for key, value in row.items()})
+        return stream.getvalue()[:-2] + "\n"
+
+    return (record(dict(zip(fields, fields, strict=True))) + "".join(record(row) for row in rows)).encode("utf-8")
+
+
+def csv_label(value):
+    """Keep formula-shaped scenario labels inert in spreadsheet exports."""
+    prefix = "text: "
+    if value.startswith((prefix, "\t", "\r", "\n", "\x00", "\ufeff")) or value.lstrip(
+        " \t\r\n\v\f\x00\ufeff"
+    ).startswith(("=", "+", "-", "@", "＝", "＋", "－", "＠")):
+        return prefix + value
+    return value
 
 
 def build(data, scenarios):

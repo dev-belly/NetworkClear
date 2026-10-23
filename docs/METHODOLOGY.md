@@ -36,4 +36,32 @@ Gross unpaid debt sums all `b-p`, including internal exposures. Outside shortfal
 
 Replay checks the fixed report member set, rejects symlinks, verifies hashes and recomputes every member. It detects output-only corruption with updated hashes, not a coordinated rewrite of the input and all regenerated evidence.
 
+## Spreadsheet exports
+
+Untrusted scenario IDs that begin with formula operators (ASCII or full-width,
+including operators behind ASCII whitespace) or leading control/BOM prefixes
+receive a visible `text: ` marker in all four CSV exports. IDs already starting
+with that marker receive one more marker to prevent label collisions. Original
+IDs remain in `scenarios.json`, `analysis.json` and HTML. Exact payment fractions,
+numeric counts and clearing certificates keep their existing representations.
+
+Embedded CR, LF and CRLF are quoted as cell content; CSV record endings remain
+LF. The visible marker avoids relying on apostrophes that some spreadsheet
+editors remove on save/reopen; see [OWASP's guidance](https://owasp.org/www-community/attacks/CSV_Injection).
+Use JSON for original identities and replay. The standard committed demo is
+unchanged; regenerate earlier reports from their saved JSON inputs before
+using the updated verifier and selector renderer.
+
 The source model is [Eisenberg & Noe (2001)](https://pubsonline.informs.org/doi/10.1287/mnsc.47.2.236.9835). Synthetic exposures do not estimate real-bank risk. Seniority, collateral, bankruptcy costs, fire sales, uncertain assets and dynamic liquidity are outside scope.
+
+HTML selectors use explicit ASCII JSON identity keys shared with their result
+rows/panels. This preserves distinct repeated-whitespace, CR/LF, NUL and Unicode
+identities through browser preprocessing; visible labels and source JSON retain
+the original text. Saved report HTML and its manifest hash were refreshed without
+changing financial values or source data.
+
+The `Chrome report selectors` CI job selects these identities in actual Chrome,
+checking that each choice shows the intended result. It uses the Ubuntu runner's
+Chrome/chromedriver and no extra Python package. Run
+`python scripts/check_browser.py` with matching Chrome and chromedriver installed
+(or set `CHROMEWEBDRIVER` to the driver's directory) to reproduce it.

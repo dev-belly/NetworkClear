@@ -84,6 +84,10 @@ networkclear verify examples/demo
 
 No runtime dependencies, credentials or downloads are needed. CI runs tests, committed report replay and installed-wheel smoke tests on Linux with Python 3.11–3.13 and Windows with Python 3.12. Text files retain LF endings even when Git's `core.autocrlf` is enabled, preserving report hashes and preview bytes. The verifier rejects rehashed output tampering; it does not authenticate inputs or detect a complete coordinated rewrite.
 
+CSV review exports mark formula-shaped scenario names as text and quote embedded
+carriage returns. Original IDs remain in JSON; exact payments and certificates
+are unchanged. See the [spreadsheet export contract](docs/METHODOLOGY.md#spreadsheet-exports).
+
 ## 中文说明
 
 银行网络风险与交易对手分析项目，重点是 **债务方向、比例清偿、直接违约与新增传染违约、精确方程证书、外部资金勾稽、内部债务重复计算**，与贷款违约预测项目互补。
