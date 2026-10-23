@@ -49,8 +49,8 @@ Embedded CR, LF and CRLF are quoted as cell content; CSV record endings remain
 LF. The visible marker avoids relying on apostrophes that some spreadsheet
 editors remove on save/reopen; see [OWASP's guidance](https://owasp.org/www-community/attacks/CSV_Injection).
 Use JSON for original identities and replay. The standard committed demo is
-unchanged; regenerate older custom reports with affected scenario labels before
-using the updated verifier.
+unchanged; regenerate earlier reports from their saved JSON inputs before
+using the updated verifier and selector renderer.
 
 The source model is [Eisenberg & Noe (2001)](https://pubsonline.informs.org/doi/10.1287/mnsc.47.2.236.9835). Synthetic exposures do not estimate real-bank risk. Seniority, collateral, bankruptcy costs, fire sales, uncertain assets and dynamic liquidity are outside scope.
 
