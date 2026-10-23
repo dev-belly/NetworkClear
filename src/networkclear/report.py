@@ -1,6 +1,7 @@
 """Stress scenario evidence, CSV flows, interactive HTML and independent replay."""
 
 import html
+import json
 from fractions import Fraction
 from pathlib import Path
 
@@ -139,10 +140,14 @@ def analyze(data, scenarios):
 
 def render(analysis):
     esc = html.escape
+
+    def identity(value):
+        return esc(json.dumps(value, ensure_ascii=True), quote=True)
+
     options, panels = [], []
     for case in analysis["cases"]:
         name = case["scenario"]
-        options.append(f"<option value='{esc(name, quote=True)}'>{esc(name)}</option>")
+        options.append(f"<option value='{identity(name)}'>{esc(name)}</option>")
         rows = []
         for payment in analysis["payments"]:
             if payment["scenario"] == name:
@@ -157,7 +162,7 @@ def render(analysis):
         default_ids = ", ".join(case["default_ids"]) or "none"
         cascade_ids = ", ".join(case["cascade_default_ids"]) or "none"
         panels.append(
-            f"<section data-case='{esc(name, quote=True)}'><h2>{esc(name)}</h2>"
+            f"<section data-case='{identity(name)}'><h2>{esc(name)}</h2>"
             "<div class='cards'>"
             f"<div><strong>{case['default_count']}</strong><span>Defaulting institutions</span></div>"
             f"<div><strong>{case['cascade_count']}</strong><span>Additional cascade defaults</span></div>"

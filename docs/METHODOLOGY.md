@@ -53,3 +53,9 @@ unchanged; regenerate older custom reports with affected scenario labels before
 using the updated verifier.
 
 The source model is [Eisenberg & Noe (2001)](https://pubsonline.informs.org/doi/10.1287/mnsc.47.2.236.9835). Synthetic exposures do not estimate real-bank risk. Seniority, collateral, bankruptcy costs, fire sales, uncertain assets and dynamic liquidity are outside scope.
+
+HTML selectors use explicit ASCII JSON identity keys shared with their result
+rows/panels. This preserves distinct repeated-whitespace, CR/LF, NUL and Unicode
+identities through browser preprocessing; visible labels and source JSON retain
+the original text. Saved report HTML and its manifest hash were refreshed without
+changing financial values or source data.
