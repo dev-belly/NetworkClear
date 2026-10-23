@@ -247,10 +247,26 @@ def csv_bytes(rows, fields):
     import io
 
     stream = io.StringIO(newline="")
-    writer = csv.DictWriter(stream, fieldnames=fields, lineterminator="\n")
-    writer.writeheader()
-    writer.writerows(rows)
-    return stream.getvalue().encode()
+    # Quote embedded CR as well as LF, while retaining LF record endings.
+    writer = csv.DictWriter(stream, fieldnames=fields, lineterminator="\r\n")
+
+    def record(row):
+        stream.seek(0)
+        stream.truncate(0)
+        writer.writerow({key: csv_label(value) if key == "scenario" else value for key, value in row.items()})
+        return stream.getvalue()[:-2] + "\n"
+
+    return (record(dict(zip(fields, fields, strict=True))) + "".join(record(row) for row in rows)).encode("utf-8")
+
+
+def csv_label(value):
+    """Keep formula-shaped scenario labels inert in spreadsheet exports."""
+    prefix = "text: "
+    if value.startswith((prefix, "\t", "\r", "\n", "\x00", "\ufeff")) or value.lstrip(
+        " \t\r\n\v\f\x00\ufeff"
+    ).startswith(("=", "+", "-", "@", "＝", "＋", "－", "＠")):
+        return prefix + value
+    return value
 
 
 def build(data, scenarios):
