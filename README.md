@@ -10,7 +10,21 @@ If an institution loses external assets, which debts remain unpaid after the net
 
 **[Try the live clearing report](https://dev-belly.github.io/NetworkClear/)**
 
-![NetworkClear demo](docs/preview.svg)
+**Synthetic demo · eight institutions**
+
+50% external-asset shock to A.
+
+| Measure | Result |
+| --- | ---: |
+| Defaulting institutions | 4 |
+| Additional cascade defaults | 3 |
+| Outside creditor shortfall | USD 3,380 |
+| Gross unpaid nominal debt | USD 12,020 |
+| Fixed-point residual | 0 |
+
+Direct default: A; cascade additions: B, C and D. Outside losses are counted separately.
+
+15 scenarios · exact rational payments · exhaustive independent clearing checks.
 
 ## Quick start
 
