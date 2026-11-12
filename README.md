@@ -8,7 +8,7 @@
 
 If an institution loses external assets, which debts remain unpaid after the network clears? NetworkClear implements pro-rata Eisenberg–Noe clearing, records the computational default sequence and separates **gross unpaid debt** from **outside creditor shortfall**.
 
-**[Try the live clearing report](https://dev-belly.github.io/NetworkClear/)** · [中文面试讲解](docs/INTERVIEW.md)
+**[Try the live clearing report](https://dev-belly.github.io/NetworkClear/)**
 
 ![NetworkClear demo](docs/preview.svg)
 
@@ -93,7 +93,6 @@ are unchanged. See the [spreadsheet export contract](docs/METHODOLOGY.md#spreads
 银行网络风险与交易对手分析项目，重点是 **债务方向、比例清偿、直接违约与新增传染违约、精确方程证书、外部资金勾稽、内部债务重复计算**，与贷款违约预测项目互补。
 
 - [方法、输入结构与边界](docs/METHODOLOGY.md)
-- [三分钟面试讲解](docs/INTERVIEW.md)
 - [可复算演示](examples/demo)
 - Eisenberg & Noe (2001), [Systemic Risk in Financial Systems](https://pubsonline.informs.org/doi/10.1287/mnsc.47.2.236.9835), Management Science 47(2), 236–249; [paper copy](https://ms.mcmaster.ca/tom/Research%20Papers/EiseNoe01.pdf).
 
