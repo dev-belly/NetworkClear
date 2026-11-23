@@ -81,7 +81,7 @@ def browser_check(cases, root):
         port = available.getsockname()[1]
     address = f"http://127.0.0.1:{port}"
 
-    def call(method, endpoint, payload=None):
+    def call(method, endpoint, payload=None, *, timeout=15):
         request = urllib.request.Request(
             address + endpoint,
             data=json.dumps(payload).encode() if payload is not None else None,
@@ -89,7 +89,7 @@ def browser_check(cases, root):
             method=method,
         )
         try:
-            with urllib.request.urlopen(request, timeout=15) as response:
+            with urllib.request.urlopen(request, timeout=timeout) as response:
                 return json.load(response)["value"]
         except urllib.error.HTTPError as error:
             raise RuntimeError(error.read().decode()) from error
@@ -118,6 +118,8 @@ def browser_check(cases, root):
                     }
                 }
             },
+            # Cold Chrome launches on hosted runners can outlast a normal command.
+            timeout=60,
         )["sessionId"]
         selections = 0
         for case in cases:
