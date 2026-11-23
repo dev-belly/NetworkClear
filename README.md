@@ -31,6 +31,15 @@ Direct default: A; cascade additions: B, C and D. Outside losses are counted sep
 
 15 scenarios · exact rational payments · exhaustive independent clearing checks.
 
+## Clearing workbench
+
+Explore 15 stress cases, see which debts drive cascades, and inspect exact rational payments.
+
+[Workbench files](docs/workbench/)
+
+Open `docs/workbench/index.html` from a checkout to filter, drill into a record, and export CSV or JSON offline.
+Run `python docs/workbench/build_data.py --check` to verify the browser snapshot.
+
 ## Quick start
 
 On macOS or Linux:
