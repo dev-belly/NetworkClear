@@ -3,6 +3,7 @@
 import argparse
 import hashlib
 import json
+from fractions import Fraction
 from pathlib import Path
 
 
@@ -55,9 +56,6 @@ def theme(accent, muted, base, glow):
     }
 
 
-from fractions import Fraction
-
-
 REPOSITORY = "https://github.com/dev-belly/NetworkClear"
 INPUT = "examples/demo/analysis.json"
 POSITIONS = {
@@ -95,6 +93,7 @@ def build():
         direct = case["direct_default_ids"]
         cascade = case["cascade_default_ids"]
         payments = [row for row in result["payments"] if row["scenario"] == identifier]
+        payments_by_node = {row["node"]: row for row in payments}
         rounds = [row for row in result["rounds"] if row["scenario"] == identifier]
         flows = [row for row in result["flows"] if row["scenario"] == identifier]
         internal = [row for row in flows if row["creditor"] in POSITIONS]
@@ -105,6 +104,9 @@ def build():
                 "x": POSITIONS[name][0],
                 "y": POSITIONS[name][1],
                 "status": "direct" if name in direct else "cascade" if name in cascade else "solvent",
+                "paid": payments_by_node[name]["paid_cents"],
+                "nominal": payments_by_node[name]["nominal_cents"],
+                "recovery": payments_by_node[name]["recovery_ratio"],
             }
             for name in result["node_ids"]
         ]
@@ -184,7 +186,7 @@ def build():
                     "nodes": nodes,
                     "edges": edges,
                     "summary": f"{label}。直接违约 {'、'.join(direct) or '无'}，传染违约 {'、'.join(cascade) or '无'}。",
-                    "key": "红色节点为直接违约，橙色节点为传染违约。箭头从债务人指向债权人，红线表示机构间实付低于名义债务。",
+                    "key": "红色节点为直接违约，橙色节点为传染违约。箭头从债务人指向债权人，红色虚线标出未足额付款。",
                 },
                 "sections": sections,
             }
@@ -226,7 +228,7 @@ def build():
                 "label": "网络",
                 "title": "所选情景的清算网络",
                 "mode": "graph",
-                "caption": "区分初始冲击与沿机构间债务传染的违约。选择下方情景切换。",
+                "caption": "选择一个机构查看它的实付金额、名义负债与回收率。",
             },
             {
                 "id": "outside",
