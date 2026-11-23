@@ -198,7 +198,6 @@ details{margin-top:12px}
 .comparison td,.comparison th{padding-inline:5px}.cards div{padding:10px}}
 """
 
-
 _REPORT_HEADER = """</style><header><div class='hero'><div class='brand'>
 <strong>NetworkClear</strong><a href='https://github.com/dev-belly/NetworkClear'>Source on
 GitHub</a>
@@ -207,7 +206,6 @@ GitHub</a>
 creditor losses.</p><p class='units'>Exact rational clearing · Amounts in
 USD</p></div></header><main>
 <div class='toolbar'><div class='controls'><label>Stress scenario <select id='scenario'>"""
-
 
 _REPORT_CONTROLS = """</select></label><label>Comparison scenario
 <select id='compare-scenario' disabled></select></label>
@@ -221,7 +219,6 @@ href='payments.csv'>Payments</a>
 <th id='selected-title' scope='col'></th><th id='comparison-title'
 scope='col'></th></tr></thead>
 <tbody id='comparison-rows'></tbody></table></div>"""
-
 
 _REPORT_SCRIPT = """
 const byId = id => document.getElementById(id);
@@ -348,29 +345,30 @@ def render(analysis):
             cells.append(f"<td>{display(read_fraction(amount) / 100, 2)}</td>")
         matrix.append(f"<tr><th>{esc(debtor)}</th>" + "".join(cells) + "</tr>")
     columns = "".join(f"<th>{esc(name)}</th>" for name in analysis["node_ids"] + ["OUTSIDE"])
-    return (
-        "<!doctype html><html lang='en'><meta charset='utf-8'>"
-        "<meta name='viewport' content='width=device-width, initial-scale=1'>"
-        "<title>NetworkClear · debt clearing explorer</title><style>"
-        + _REPORT_CSS
-        + _REPORT_HEADER
-        + "".join(options)
-        + _REPORT_CONTROLS
-        + "".join(panels)
-        + "<div class='matrix'><h2>Nominal liability matrix / 债务矩阵</h2>"
-        "<p>Rows owe columns. Amounts below are USD; outside creditors do not owe the network.</p>"
-        "<div class='scroll'><table><thead><tr><th>Debtor ↓ / Creditor →</th>"
-        + columns
-        + "</tr></thead><tbody>"
-        + "".join(matrix)
-        + "</tbody></table></div></div>"
-        "<p>Every debtor has positive outside debt. Display rounds to cents; mathematical payments "
-        "can be fractional cents. <code>networkclear verify examples/demo</code> recomputes "
-        "all files and exhaustively checks clearing regimes for networks of at most eight nodes. "
-        "Hashes establish consistency, not authenticity.</p></main><script>"
-        + _REPORT_SCRIPT
-        + "</script></html>\n"
-    ).encode()
+    parts = (
+        "<!doctype html><html lang='en'><meta charset='utf-8'>",
+        "<meta name='viewport' content='width=device-width, initial-scale=1'>",
+        "<title>NetworkClear · debt clearing explorer</title><style>",
+        _REPORT_CSS,
+        _REPORT_HEADER,
+        "".join(options),
+        _REPORT_CONTROLS,
+        "".join(panels),
+        "<div class='matrix'><h2>Nominal liability matrix / 债务矩阵</h2>",
+        "<p>Rows owe columns. Amounts below are USD; outside creditors do not owe the network.</p>",
+        "<div class='scroll'><table><thead><tr><th>Debtor ↓ / Creditor →</th>",
+        columns,
+        "</tr></thead><tbody>",
+        "".join(matrix),
+        "</tbody></table></div></div>",
+        "<p>Every debtor has positive outside debt. Display rounds to cents; mathematical payments ",
+        "can be fractional cents. <code>networkclear verify examples/demo</code> recomputes ",
+        "all files and exhaustively checks clearing regimes for networks of at most eight nodes. ",
+        "Hashes establish consistency, not authenticity.</p></main><script>",
+        _REPORT_SCRIPT,
+        "</script></html>\n",
+    )
+    return "".join(parts).encode()
 
 
 def read_fraction(value):
