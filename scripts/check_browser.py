@@ -40,6 +40,30 @@ for (const label of spec.labels) {
             throw new Error('Empty or incorrect filtered result: ' + JSON.stringify(label));
     }
 }
+const reference = document.getElementById("compare-scenario");
+if (reference && select.options.length > 1) {
+    reference.value = reference.options[1].value;
+    reference.dispatchEvent(new Event("change"));
+    const region = document.getElementById("comparison");
+    if (region.hidden || region.querySelectorAll("tbody tr").length !== 4)
+        throw new Error("Scenario comparison did not render four verified measures");
+    const source = Array.from(document.querySelectorAll("section[data-case]"))
+        .find(panel => panel.dataset.case === reference.value);
+    const exact = source.querySelectorAll(".cards strong")[2].textContent;
+    if (region.querySelector("tbody tr:nth-child(3) td:last-child").textContent !== exact)
+        throw new Error("Comparison uses the wrong outside shortfall");
+    const filter = document.getElementById("institution");
+    const active = document.querySelector("section[data-case]:not([hidden])");
+    if (!active.querySelector(".recovery-bar")) throw new Error("Missing recovery visualization");
+    filter.value = "unmatched fixture institution";
+    filter.dispatchEvent(new Event("input"));
+    if (Array.from(active.querySelectorAll("tbody tr")).some(row => !row.hidden))
+        throw new Error("An unmatched institution should produce an empty table");
+    filter.value = "";
+    filter.dispatchEvent(new Event("input"));
+    if (!Array.from(active.querySelectorAll("tbody tr")).every(row => !row.hidden))
+        throw new Error("Clearing the institution filter should restore all rows");
+}
 return spec.labels.length;
 """
 

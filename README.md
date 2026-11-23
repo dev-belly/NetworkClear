@@ -8,7 +8,12 @@
 
 If an institution loses external assets, which debts remain unpaid after the network clears? NetworkClear implements pro-rata Eisenberg–Noe clearing, records the computational default sequence and separates **gross unpaid debt** from **outside creditor shortfall**.
 
-**[Try the live clearing report](https://dev-belly.github.io/NetworkClear/)**
+**[Open the clearing explorer](https://dev-belly.github.io/NetworkClear/)**
+
+Choose a shock scenario and a reference to compare defaults, outside
+shortfall, and gross unpaid debt. Filter by institution and scan payment
+recovery bars next to the exact ratios. The evidence downloads contain
+each scenario's clearing payments, flows, and active-set steps.
 
 **Synthetic demo · eight institutions**
 
