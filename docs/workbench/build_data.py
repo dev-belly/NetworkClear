@@ -179,7 +179,12 @@ def build():
                 ],
                 "charts": {
                     "recovery": [
-                        {"label": row["node"], "value": float(Fraction(row["recovery_ratio"]))} for row in payments
+                        {
+                            "label": row["node"],
+                            "value": float(Fraction(row["recovery_ratio"])),
+                            "displayValue": row["recovery_ratio"],
+                        }
+                        for row in payments
                     ]
                 },
                 "graph": {
@@ -221,7 +226,10 @@ def build():
             {**column("outside", "外部短缺", "rationalUsd"), "exportTitle": "外部短缺（有理分）"},
             {**column("gross", "总未付债务", "rationalUsd"), "exportTitle": "总未付债务（有理分）"},
         ],
-        "orders": [order("outside_usd", "外部短缺最高"), order("cascade", "新增违约最多")],
+        "orders": [
+            {**order("outside", "外部短缺最高"), "id": "outside_usd", "format": "rationalUsd"},
+            order("cascade", "新增违约最多"),
+        ],
         "views": [
             {
                 "id": "network",
@@ -235,6 +243,8 @@ def build():
                 "label": "外部短缺",
                 "title": "各情景的外部短缺",
                 "metric": "outside_usd",
+                "displayKey": "outside",
+                "displayFormat": "rationalUsd",
                 "descending": True,
                 "format": "usd",
                 "caption": "显示外部债权短缺最高的情景及所选情景。金额保留到美元小数点后两位。",
@@ -245,11 +255,12 @@ def build():
                 "title": "所选情景的节点回收率",
                 "mode": "detail",
                 "format": "percent",
+                "displayFormat": "rationalPercent",
                 "max": 1,
                 "caption": "各机构实际付款总额与名义负债的比率。",
             },
         ],
-        "sourceNote": "箭头表示模型中的名义债务方向。轮次是清算算法步骤。表格展示四舍五入美元；明细和 CSV 保留有理分的原值。",
+        "sourceNote": "箭头表示模型中的名义债务方向。轮次是清算算法步骤。金额和回收率采用半偶舍入，明细和 CSV 保留有理分的原值。",
         "sources": [
             source("清算结果与方程证书", INPUT),
             source(f"{len(scenarios)} 个输入情景", "examples/demo/scenarios.json"),

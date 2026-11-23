@@ -67,8 +67,31 @@ if (reference && select.options.length > 1) {
 return spec.labels.length;
 """
 
+WORKBENCH_SCRIPT = """
+const readout = () => document.querySelector(".graph-readout").textContent;
+const view = (label) => [...document.querySelectorAll("#views button")]
+    .find(button => button.textContent === label).click();
 
-def browser_check(cases, root):
+if (document.querySelector(".graph-node[aria-pressed=true]").textContent !== "B")
+    throw new Error("Institution deep link did not select B");
+if (!readout().includes("53.12%"))
+    throw new Error("Institution recovery did not use exact half-even rounding");
+
+view("回收率");
+const rows = [...document.querySelectorAll(".bar-row")];
+const bank = rows.find(row => row.querySelector(".bar-label").textContent === "B");
+if (bank.querySelector(".bar-value").textContent !== "53.12%")
+    throw new Error("Recovery chart differs from the reconciled institution detail");
+view("网络");
+if (document.querySelector(".graph-node[aria-pressed=true]").textContent !== "B")
+    throw new Error("Switching views discarded the selected institution");
+document.querySelector("#reset").click();
+if (document.querySelector(".graph-node[aria-pressed=true]").textContent !== "A")
+    throw new Error("Reset did not return to the default institution");
+"""
+
+
+def browser_check(cases, root, workbench):
     driver = shutil.which("chromedriver")
     if not driver:
         candidate = Path(os.environ.get("CHROMEWEBDRIVER", "")) / "chromedriver"
@@ -125,6 +148,9 @@ def browser_check(cases, root):
         for case in cases:
             call("POST", f"/session/{session}/url", {"url": (root / case["file"]).as_uri()})
             selections += call("POST", f"/session/{session}/execute/sync", {"script": SCRIPT, "args": [case]})
+        workbench_url = workbench.as_uri() + "?record=broad-050-pct&node=B"
+        call("POST", f"/session/{session}/url", {"url": workbench_url})
+        call("POST", f"/session/{session}/execute/sync", {"script": WORKBENCH_SCRIPT, "args": []})
         print(json.dumps({"status": "passed", "browser": "Chrome", "reports": len(cases), "selections": selections}))
     finally:
         if session is not None:
@@ -162,6 +188,7 @@ def main():
                 }
             ],
             root,
+            Path(__file__).resolve().parents[1] / "docs/workbench/index.html",
         )
 
 
