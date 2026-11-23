@@ -138,6 +138,156 @@ def analyze(data, scenarios):
     }
 
 
+_REPORT_CSS = """
+:root{color:#172237;background:#f1f4fa;font:15px/1.55 system-ui,sans-serif;
+  --line:#dce3f0;--purple:#5543ad;--muted:#53637a}
+*{box-sizing:border-box}
+body{margin:0}
+[hidden]{display:none!important}
+header,main{max-width:1250px;margin:auto;padding-inline:clamp(16px,4vw,44px)}
+header{padding-block:clamp(16px,3vw,34px) 0}
+.hero{padding:clamp(20px,5vw,48px);border-radius:26px;color:white;
+  background:radial-gradient(ellipse at 98% 110%,#4f45aa,transparent 64%),
+  linear-gradient(115deg,#131e35,#262653);box-shadow:0 15px 32px #293a6620}
+.hero a{color:#eeebff}
+.brand{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.brand strong{font-size:1.05rem}
+h1{font-size:clamp(2rem,5.8vw,4.05rem);letter-spacing:-.06em;line-height:1.04;margin:18px 0 10px}
+h2{font-size:1.27rem;letter-spacing:-.034em;margin:0 0 12px;overflow-wrap:anywhere}
+.hero p{color:#e1e6ff;margin:0;max-width:62ch}
+.hero .units{font-size:.81rem;margin-top:6px;color:#d6d9ff}
+main{padding-bottom:40px}
+section,.toolbar,.matrix,.comparison{background:white;padding:clamp(13px,2.4vw,24px);margin:16px 0;
+  border-radius:17px;border:1px solid var(--line);box-shadow:0 7px 22px #3e4f7a09;min-width:0}
+.controls{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+label{display:grid;gap:5px;color:#3f506b;font-size:.84rem;font-weight:650;min-width:0}
+select,input{font:inherit;min-width:0;width:100%;min-height:41px;padding:8px 10px;color:#1b2945;
+  border:1px solid #cdd7ec;border-radius:9px;background:#f8faff}
+select:focus-visible,input:focus-visible,a:focus-visible,summary:focus-visible{
+  outline:3px solid #6654c6;outline-offset:3px}
+.downloads{display:flex;gap:8px 15px;flex-wrap:wrap;margin:13px 0 0;font-size:.79rem}
+a{color:#4a39a5;text-underline-offset:.18em}
+.cards{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}
+.cards div{background:#f1f1fc;border:1px solid #e8e7f7;border-radius:12px;padding:13px;min-width:0}
+.cards div:nth-child(3){background:#271e57;color:#fff;border-color:#271e57}
+.cards div:nth-child(4){background:#edf3ff;border-color:#e2eaff}
+.cards strong{display:block;font-size:clamp(1.1rem,2.5vw,1.75rem);letter-spacing:-.04em;
+  font-variant-numeric:tabular-nums;overflow-wrap:anywhere}
+.cards span{font-size:.77rem}
+.scroll{overflow:auto}
+table{width:100%;border-collapse:collapse;font-size:.86rem}
+td,th{padding:10px;text-align:left;border-bottom:1px solid #e7edf6;overflow-wrap:anywhere}
+th{background:#f3f5fb;color:#43536d;font-size:.79rem}
+td:nth-child(2),td:nth-child(3){font-variant-numeric:tabular-nums}
+tr[data-default="true"]>td:nth-child(4){color:#a52c4b;font-weight:650}
+section table{min-width:560px}
+.matrix table{min-width:520px}
+.comparison table{table-layout:fixed}
+.comparison td,.comparison th{padding:8px}
+.comparison th:first-child{width:37%}
+.comparison td:nth-child(2){font-weight:700;color:#473794}
+.recovery-bar{display:block;max-width:92px;height:4px;border-radius:999px;margin-top:5px;
+  background:linear-gradient(90deg,#6961c7 var(--share),#e3e9f4 var(--share))}
+#match-count{color:var(--muted);font-size:.8rem;margin:.6rem 0 0}
+code{overflow-wrap:anywhere}
+summary{cursor:pointer;color:var(--purple);font-size:.87rem;font-weight:650}
+details{margin-top:12px}
+@media(max-width:720px){.cards{grid-template-columns:repeat(2,minmax(0,1fr))}
+.hero{border-radius:18px}section,.toolbar,.matrix,.comparison{margin-block:11px}}
+@media(max-width:520px){.controls{grid-template-columns:minmax(0,1fr)}
+.comparison td,.comparison th{padding-inline:5px}.cards div{padding:10px}}
+"""
+
+
+_REPORT_HEADER = """</style><header><div class='hero'><div class='brand'>
+<strong>NetworkClear</strong><a href='https://github.com/dev-belly/NetworkClear'>Source on
+GitHub</a>
+</div><h1>Debt clearing explorer</h1>
+<p>Explore how synthetic asset shocks change payments, cascade defaults and outside
+creditor losses.</p><p class='units'>Exact rational clearing · Amounts in
+USD</p></div></header><main>
+<div class='toolbar'><div class='controls'><label>Stress scenario <select id='scenario'>"""
+
+
+_REPORT_CONTROLS = """</select></label><label>Comparison scenario
+<select id='compare-scenario' disabled></select></label>
+<label>Institution <input id='institution' type='search' placeholder='Filter by institution ID'>
+</label></div><p class='downloads'><a href='cases.csv'>Scenario CSV</a><a
+href='payments.csv'>Payments</a>
+<a href='flows.csv'>Debt flows</a><a href='rounds.csv'>Algorithm rounds</a>
+<a href='manifest.json'>SHA-256 manifest</a></p><p id='match-count' role='status'></p></div>
+<div id='comparison' class='comparison' hidden><h2>Scenario comparison</h2>
+<table aria-label='Scenario comparison'><thead><tr><th scope='col'>Measure</th>
+<th id='selected-title' scope='col'></th><th id='comparison-title'
+scope='col'></th></tr></thead>
+<tbody id='comparison-rows'></tbody></table></div>"""
+
+
+_REPORT_SCRIPT = """
+const byId = id => document.getElementById(id);
+const select = byId("scenario");
+const comparison = byId("compare-scenario");
+const institution = byId("institution");
+const panels = [...document.querySelectorAll("section[data-case]")];
+const choices = [...select.options];
+comparison.append(new Option("No comparison", ""),
+  ...choices.map(option => new Option(option.text, option.value)));
+comparison.disabled = choices.length < 2;
+if (choices.length > 1) comparison.value = choices[1].value;
+
+function textCell(value, tag = "td") {
+  const cell = document.createElement(tag);
+  cell.textContent = value;
+  return cell;
+}
+function renderComparison(active) {
+  const reference = panels.find(panel => panel.dataset.case === comparison.value);
+  byId("comparison").hidden = !active || !reference;
+  if (!active || !reference) return;
+  byId("selected-title").textContent = active.querySelector("h2").textContent;
+  byId("comparison-title").textContent = reference.querySelector("h2").textContent;
+  const left = [...active.querySelector(".cards").children];
+  const right = [...reference.querySelector(".cards").children];
+  byId("comparison-rows").replaceChildren(...left.map((metric, index) => {
+    const row = document.createElement("tr");
+    const label = textCell(metric.querySelector("span").textContent, "th");
+    label.scope = "row";
+    row.append(label, textCell(metric.querySelector("strong").textContent),
+      textCell(right[index].querySelector("strong").textContent));
+    return row;
+  }));
+}
+function refresh() {
+  const active = panels.find(panel => panel.dataset.case === select.value);
+  for (const panel of panels) panel.hidden = panel !== active;
+  renderComparison(active);
+  const query = institution.value.trim().toLowerCase();
+  const rows = [...(active?.querySelectorAll("tbody tr") ?? [])];
+  let shown = 0;
+  for (const row of rows) {
+    row.hidden = !row.cells[0].textContent.toLowerCase().includes(query);
+    if (!row.hidden) shown++;
+  }
+  byId("match-count").textContent = shown + " of " + rows.length + " institutions";
+}
+for (const row of document.querySelectorAll("section[data-case] tbody tr")) {
+  row.dataset.default = String(row.cells[3].textContent === "DEFAULT");
+  const ratio = row.cells[2].textContent.match(/^(\\d+)\\/([1-9]\\d*)$/);
+  if (!ratio) continue;
+  const share = Number(BigInt(ratio[1]) * 10000n / BigInt(ratio[2])) / 100;
+  const bar = document.createElement("span");
+  bar.className = "recovery-bar";
+  bar.setAttribute("aria-hidden", "true");
+  bar.style.setProperty("--share", share + "%");
+  row.cells[2].append(bar);
+}
+select.addEventListener("change", refresh);
+comparison.addEventListener("change", refresh);
+institution.addEventListener("input", refresh);
+refresh();
+"""
+
+
 def render(analysis):
     esc = html.escape
 
@@ -201,28 +351,11 @@ def render(analysis):
     return (
         "<!doctype html><html lang='en'><meta charset='utf-8'>"
         "<meta name='viewport' content='width=device-width, initial-scale=1'>"
-        "<title>NetworkClear · debt clearing and contagion</title><style>"
-        "*{box-sizing:border-box}body{margin:0;background:#f3f5fa;color:#18273b;font:15px/1.6 system-ui}"
-        "header,main{max-width:1200px;margin:auto;padding:28px}header{border-bottom:4px solid #7159bf}"
-        "h1{font-size:42px;margin:0}.eyebrow{color:#7159bf;font-weight:700}"
-        "section,.toolbar,.matrix{background:white;padding:24px;margin:20px 0;border-radius:12px;"
-        "border:1px solid #dbe1eb}h2{margin-top:0}.cards{display:grid;grid-template-columns:repeat(4,1fr);"
-        "gap:12px}.cards div{background:#f2effa;border-radius:8px;padding:16px}.cards strong{display:block;"
-        "font-size:28px}.cards span{font-size:13px}table{width:100%;border-collapse:collapse;font-size:13px}"
-        "td,th{padding:12px;text-align:left;border-bottom:1px solid #e3e8f0}th{background:#eef0f7}"
-        "select{font:inherit;padding:8px;max-width:100%}.scroll{overflow-x:auto}a{color:#6046ad}"
-        "section[hidden]{display:none}code{overflow-wrap:anywhere}"
-        "@media(max-width:700px){.cards{grid-template-columns:repeat(2,1fr)}h1{font-size:30px}"
-        "header,main{padding:16px}}</style><header><p class='eyebrow'>DEBT NETWORK → EXACT CLEARING → CERTIFICATE</p>"
-        "<h1>NetworkClear</h1><p>交易对手违约传染与债务清算。Synthetic institution networks, "
-        "pro-rata repayment, exact rational payments, and independent small-network verification.</p>"
-        "<p>Gross unpaid internal debt and outside creditor losses are reported separately. "
-        "This model is an educational experiment, not a real-bank risk estimate.</p></header><main>"
-        "<div class='toolbar'><label>Stress scenario <select id='scenario'>"
+        "<title>NetworkClear · debt clearing explorer</title><style>"
+        + _REPORT_CSS
+        + _REPORT_HEADER
         + "".join(options)
-        + "</select></label><p><a href='cases.csv'>Scenario CSV</a> · <a href='payments.csv'>Payments</a> · "
-        "<a href='flows.csv'>Debt flows</a> · <a href='rounds.csv'>Algorithm rounds</a> · "
-        "<a href='manifest.json'>SHA-256 manifest</a></p></div>"
+        + _REPORT_CONTROLS
         + "".join(panels)
         + "<div class='matrix'><h2>Nominal liability matrix / 债务矩阵</h2>"
         "<p>Rows owe columns. Amounts below are USD; outside creditors do not owe the network.</p>"
@@ -235,9 +368,8 @@ def render(analysis):
         "can be fractional cents. <code>networkclear verify examples/demo</code> recomputes "
         "all files and exhaustively checks clearing regimes for networks of at most eight nodes. "
         "Hashes establish consistency, not authenticity.</p></main><script>"
-        "const select=document.querySelector('#scenario');function refresh(){"
-        "document.querySelectorAll('section').forEach(s=>{s.hidden=s.dataset.case!==select.value;});}"
-        "select.addEventListener('change',refresh);refresh();</script></html>\n"
+        + _REPORT_SCRIPT
+        + "</script></html>\n"
     ).encode()
 
 
